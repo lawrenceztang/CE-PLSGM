@@ -1,0 +1,6 @@
+python=3.9.12
+numpy=1.23.1
+pytorch=1.12.1
+functorch
+torchvision
+joblib
