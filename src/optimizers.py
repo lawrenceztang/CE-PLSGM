@@ -126,25 +126,35 @@ def sample_from_unit_sphere(dim):
     points = points / points.norm()
     return points
 
-def ldp_mechanism(x, c, epsilon):
-    x =
-    d = x.size()
-    rand = torch.randn()
-    x_norm = compute_per_sample_norm(x)[0]
+# CHANGED
+
+def ldp_mechanism(x_orig, c, epsilon):
+    x = torch.cat([t.view(-1) for t in x_orig])
+    d = x.size(0)
+    rand = random()
+    x_norm = torch.norm(x)
     if rand < 1/2 + x_norm / (2 * c):
         z = c * x / x_norm
     else:
         z = -c * x / x_norm
 
-    rand2 = torch.randn()
+    rand2 = random()
     v = sample_from_unit_sphere(d)
-    if rand2 < torch.exp(epsilon) / (1 + torch.exp(epsilon)):
+    if rand2 < exp(epsilon) / (1 + exp(epsilon)):
         z_tilde = torch.sign(torch.dot(v, z)) * v
     else:
         z_tilde = -torch.sign(torch.dot(v, z)) * v
-    B = c * (torch.exp(epsilon) + 1) / (torch.exp(epsilon) - 1) * (sqrt(math.pi) / 2) * (d * torch.exp(torch.lgamma((d - 1) / 2) + 1)) / torch.exp(torch.lgamma((d / 2 + 1)))
+    # B = c * (exp(epsilon) + 1) / (exp(epsilon) - 1) * (sqrt(math.pi) / 2) * (d * math.gamma((d - 1) / 2) + 1) / math.gamma((d / 2 + 1))
+    B = c * (exp(epsilon) + 1) / (exp(epsilon) - 1) * (sqrt(math.pi) / 2)
     z_bar = B * z_tilde
-    return z_bar
+
+    out = []
+    start = 0
+    for t in x_orig:
+        size = t.numel()
+        out.append(z_bar[start:start + size].view_as(t))
+        start += size
+    return out
 
 class GradientCalculator(optim.Optimizer):
     def __init__(self, model, weight_decay, closure, loss_fn):
@@ -551,6 +561,14 @@ class CE_PLS_Client(Client):
         print("Tensor clipping tests passed!")
         assert False
 
+    # CHANGED
+
+    def _compute_clipped_average(self, per_sample_grads, c):
+        clipped_per_sample_grads = clip(per_sample_grads, c)
+        ldp = ldp_mechanism(clipped_per_sample_grads, .5, .5)
+        averaged = [layer_grads.mean(dim=0) for layer_grads in ldp]
+        return averaged
+
     def _compute_full_grad_info(self, per_sample_func, c):
         dataset = self._train_loader.dataset
         batch_size = 200
@@ -638,6 +656,7 @@ class CE_PLS_Server(Server):
             optimizer.copy_params(params)
         self._model = copy.deepcopy(self._optimizers[0]._model)
 
+    # CHANGED
     def _compute_global_grad(self):
         if self._update_count == 0:
             rho = 1
