@@ -122,12 +122,15 @@ def flatten(x):
     return
 
 def sample_from_unit_sphere(dim):
-    points = torch.randn(dim)
-    points = points / points.norm()
-    return points
+    point = torch.randn(dim)
+    point = point / point.norm()
+    return point
+
+def gamma_div(d):
+    log = math.lgamma((d - 1) / 2 + 1) - math.lgamma(d / 2 + 1)
+    return exp(log)
 
 # CHANGED
-
 def ldp_mechanism(x_orig, c, epsilon):
     x = torch.cat([t.view(-1) for t in x_orig])
     d = x.size(0)
@@ -144,8 +147,7 @@ def ldp_mechanism(x_orig, c, epsilon):
         z_tilde = torch.sign(torch.dot(v, z)) * v
     else:
         z_tilde = -torch.sign(torch.dot(v, z)) * v
-    # B = c * (exp(epsilon) + 1) / (exp(epsilon) - 1) * (sqrt(math.pi) / 2) * (d * math.gamma((d - 1) / 2) + 1) / math.gamma((d / 2 + 1))
-    B = c * (exp(epsilon) + 1) / (exp(epsilon) - 1) * (sqrt(math.pi) / 2)
+    B = c * (exp(epsilon) + 1) / (exp(epsilon) - 1) * (sqrt(math.pi) / 2) * d * gamma_div(d)
     z_bar = B * z_tilde
 
     out = []
@@ -562,7 +564,6 @@ class CE_PLS_Client(Client):
         assert False
 
     # CHANGED
-
     def _compute_clipped_average(self, per_sample_grads, c):
         clipped_per_sample_grads = clip(per_sample_grads, c)
         ldp = ldp_mechanism(clipped_per_sample_grads, .5, .5)
