@@ -566,7 +566,7 @@ class CE_PLS_Client(Client):
     # CHANGED
     def _compute_clipped_average(self, per_sample_grads, c):
         clipped_per_sample_grads = clip(per_sample_grads, c)
-        ldp = ldp_mechanism(clipped_per_sample_grads, .5, .5)
+        ldp = ldp_mechanism(clipped_per_sample_grads, 1, 100)
         averaged = [layer_grads.mean(dim=0) for layer_grads in ldp]
         return averaged
 

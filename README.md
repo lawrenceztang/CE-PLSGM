@@ -8,4 +8,4 @@ Reproduction code for "CE-PSGM"
    conda activate ce-plsgm
    pip3 install -r requirements-pip.txt
    ```
-2. `python src/train.py`
+2. `python src/train.py --optimizer_name ce_plsgm`
