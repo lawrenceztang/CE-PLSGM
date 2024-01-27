@@ -3,7 +3,9 @@ Reproduction code for "CE-PSGM"
 
 # Usage
 1. ```
-   conda install --file requirements-conda.txt
+   cd source_code
+   conda create --name ce-plsgm --file requirements-conda.txt
+   conda activate ce-plsgm
    pip3 install -r requirements-pip.txt
    ```
 2. `python src/train.py`
