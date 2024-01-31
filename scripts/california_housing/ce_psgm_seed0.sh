@@ -1,15 +1,15 @@
 # Basic settings
-gpu_id=-1
 seed=0
 
 exp_name=20230123
 weight_decay=0.0
-n_global_iters=2000
+n_global_iters=500
+delta=.00000001
 dataset_name=california_housing
 n_workers=10
 model_name=fc_10
 n_local_iters=1
-optimizer_name=diff2_gd
+optimizer_name=ce_plsgm
 save_intvl=20
 eta=None
 
@@ -28,34 +28,21 @@ run() {
 	       --model_name $model_name \
 	       --optimizer_name $optimizer_name \
 	       --exp_name $exp_name \
-	       --gpu_id $gpu_id \
 	       --n_global_iters $n_global_iters \
 	       --n_local_iters $n_local_iters \
 	       --weight_decay $weight_decay \
 	       --save_intvl $save_intvl \
-	       --eps $3 \
-	       --c $c \
-	       --c2 $1 \
-	       --tau $2
+	       --eps $eps \
+	       --delta $delta \
+	       --c $c
     done
 }
 
 
-for eps in 3 5
+for eps in .6 .8 1
 do
     mkdir -p out/$exp_name/eps$eps/$dataset_name/$model_name
-    for c2 in 1 3 10 30 100
-    do
-	for tau in 0.003 0.01 0.03 0.1
-	do
-	    run $c2 $tau $eps > out/$exp_name/eps$eps/$dataset_name/$model_name/c2_${c2}_tau_${tau}.out &
-	done
-    done
-    sleep 1
-    
-    c2=None
-    tau=0.0
-    run $c2 $tau $eps > out/$exp_name/eps$eps/$dataset_name/$model_name/c2_${c2}_tau_${tau}.out
+    run $c2 $tau $eps > out/$exp_name/eps$eps/$dataset_name/$model_name.out &
 done
 
 

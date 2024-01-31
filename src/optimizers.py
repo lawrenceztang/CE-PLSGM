@@ -620,14 +620,12 @@ class CE_PLSGM_Client(CE_PLS_Client):
 
 
 class CE_PLS_Server(Server):
-    def __init__(self, p0, p1, p2, T, beta, c, c2, **kargs):
+    def __init__(self, p0, p1, beta, c, c2, **kargs):
         super(CE_PLS_Server, self).__init__(**kargs)
         self._prev_round_model = copy.deepcopy(self._model)
         self._prev_stage_model = copy.deepcopy(self._model)
         self._p0 = p0
         self._p1 = p1
-        self._p2 = p2
-        self._T = T
         self._beta = beta
         self._c = c
         self._c2 = c2
@@ -695,11 +693,3 @@ class CE_PLSGM_Server(CE_PLS_Server):
     def _get_optimizer(self, **kargs):
         assert self._n_local_iters == 1
         return CE_PLSGM_Client(**kargs)
-
-    def _set_sigma(self):
-        if self._T > 1:
-            coef = 4 * self._u
-        else:
-            coef = 4
-        self._sigma = np.sqrt(
-            coef * self._alpha * self._n_global_iters / (self._T * self._n_min ** 2 * self._n_workers ** 2 * self._eps))
