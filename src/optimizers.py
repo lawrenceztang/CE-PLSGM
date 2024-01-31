@@ -14,6 +14,7 @@ from functools import partial
 import functorch
 from random import random
 from math import exp, sqrt
+import computeamplification as CA
 
 import numpy as np
 from scipy.special import binom
@@ -383,7 +384,7 @@ class Server:
                                                 eta=eta, weight_decay=weight_decay, 
                                                 train_loader=train_loaders[i],
                                                 n_iters=n_local_iters,
-                                                closure=closure, loss_fn=loss_fn)
+                                                closure=closure, loss_fn=loss_fn, eps=eps)
                             for i in range(self._n_workers)]
 
         
@@ -540,7 +541,7 @@ class CE_PLS_Client(Client):
         self._prev_round_snap_shot = GradientCalculator(model=copy.deepcopy(kargs["model"]),
                                                         weight_decay=kargs["weight_decay"], closure=kargs["closure"],
                                                         loss_fn=kargs["loss_fn"])
-
+        self._eps = kargs["eps"]
         self._ref_grads = None
 
     def _test_tensor_clipping(self):
@@ -566,7 +567,7 @@ class CE_PLS_Client(Client):
     # CHANGED
     def _compute_clipped_average(self, per_sample_grads, c):
         clipped_per_sample_grads = clip(per_sample_grads, c)
-        ldp = ldp_mechanism(clipped_per_sample_grads, 1, 100)
+        ldp = ldp_mechanism(clipped_per_sample_grads, 1, self._eps)
         averaged = [layer_grads.mean(dim=0) for layer_grads in ldp]
         return averaged
 
@@ -619,7 +620,7 @@ class CE_PLSGM_Client(CE_PLS_Client):
 
 
 class CE_PLS_Server(Server):
-    def __init__(self, p0, p1, p2, T, beta, c, c2, c3, sigma2, **kargs):
+    def __init__(self, p0, p1, p2, T, beta, c, c2, **kargs):
         super(CE_PLS_Server, self).__init__(**kargs)
         self._prev_round_model = copy.deepcopy(self._model)
         self._prev_stage_model = copy.deepcopy(self._model)
@@ -629,15 +630,10 @@ class CE_PLS_Server(Server):
         self._T = T
         self._beta = beta
         self._c = c
-
         self._c2 = c2
-
 
         self._u = 1.25
         assert self._u > 1
-
-        self._set_sigma()
-        self._set_sigma2()
 
         self._ref_grads = None
         self._cum_dp_global_grad = None
@@ -673,7 +669,7 @@ class CE_PLS_Server(Server):
         sum1 = [add(multiply(1 - rho, g1[i]), multiply(rho, g2[i])) for i in range(len(g1))]
 
         if self._ref_grads == None:
-            self._ref_grads = average(sum1)
+            self._ref_grads = divide(average(sum1), p)
         else:
             self._ref_grads = add(multiply(1 - rho, self._ref_grads), divide(average(sum1), p))
 
@@ -707,8 +703,3 @@ class CE_PLSGM_Server(CE_PLS_Server):
             coef = 4
         self._sigma = np.sqrt(
             coef * self._alpha * self._n_global_iters / (self._T * self._n_min ** 2 * self._n_workers ** 2 * self._eps))
-
-    def _set_sigma2(self):
-        coef = 2 * (2 * self._u) / (self._u - 1)
-        self._sigma2 = np.sqrt(
-            coef * self._alpha * self._n_global_iters / (self._n_min ** 2 * self._n_workers ** 2 * self._eps))

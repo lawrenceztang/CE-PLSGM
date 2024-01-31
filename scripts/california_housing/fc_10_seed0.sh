@@ -13,6 +13,8 @@ optimizer_name=diff2_gd
 save_intvl=20
 eta=None
 
+eval "$(conda shell.bash hook)"
+conda activate ce-plsgd
 
 # Sub-routine for DP-GD & Diff2
 run() {

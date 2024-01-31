@@ -18,6 +18,8 @@ from utils.get_optimizer import get_optimizer
 from utils.get_closure import get_optimizer_closure, get_loss_fn
 from predict import predict
 from utils.load_dataset import load_dataset
+import computeamplification as CA
+from scipy.optimize import fsolve
     
 
 def get_dim(model):
@@ -48,6 +50,13 @@ def set_random_seed(seed):
         torch.cuda.manual_seed(seed)
     np.random.seed(seed)
 
+# CHANGED
+def find_epsilon(epsilon_0, k, delta):
+
+    func = lambda epsilon: epsilon / (2 * np.sqrt(k * np.log(np.e + epsilon / delta))) - epsilon_0
+    initial_guess = epsilon_0
+    epsilon_solution, = fsolve(func, initial_guess)
+    return epsilon_solution
     
 def train(**kargs):
     set_random_seed(kargs["seed"])
@@ -95,10 +104,25 @@ def train(**kargs):
                               beta=kargs["beta"],
                               c=kargs["c"],
                               c2=kargs["c2"],
-                              c3=kargs["c3"],
                               sigma2=kargs["sigma2"],
                               closure=closure,
                               loss_fn=loss_fn)
+
+    # CHANGED
+    if kargs["optimizer_name"] == "ce_plsgm":
+        n = len(train_loaders[0].dataset) * kargs["n_workers"]
+        shuffling_eps = CA.numericalanalysis(n, kargs["eps"], kargs["delta"], 10, 100, True)
+        lowerbound_eps = CA.numericalanalysis(n, kargs["eps"], kargs["delta"], 10, 100, False)
+
+        print("Shuffling", n, kargs["eps"], "-DP local randomizers results is (eps, ", kargs["delta"],
+              ")-DP in the shuffle model for eps between", lowerbound_eps, "and", shuffling_eps)
+        k = kargs["n_global_iters"]
+
+        final_eps = find_epsilon(shuffling_eps, k, kargs["delta"])
+        final_delta = kargs["delta"] * 2 * k
+
+        print("The final epsilon, delta is (", final_eps, ",", final_delta, ")")
+
 
     saved_info = {"train_loss": [], "train_acc": [], "train_grad_norm": [],
                   "test_loss": [], "test_acc": [], "test_grad_norm": [],
@@ -217,14 +241,13 @@ if __name__ == '__main__':
     parser.add_argument("--exp_name", type=str, default='test')
     parser.add_argument("--gpu_id", type=int, default=-1)
     parser.add_argument("--n_global_iters", type=int, default=2000)
-    parser.add_argument("--p0", type=none_or_float, default=".5")
-    parser.add_argument("--p1", type=none_or_float, default=".5")
-    parser.add_argument("--p2", type=none_or_float, default=".5")
+    parser.add_argument("--p0", type=none_or_float, default="1")
+    parser.add_argument("--p1", type=none_or_float, default="1")
+    parser.add_argument("--p2", type=none_or_float, default="1")
     parser.add_argument("--tau", type=float, default=0.003)
     parser.add_argument("--beta", type=float, default=0.30)
     parser.add_argument("--c", type=none_or_float, default="10")
     parser.add_argument("--c2", type=none_or_float, default="30")
-    parser.add_argument("--c3", type=none_or_float, default="30")
     parser.add_argument("--sigma2", type=none_or_float, default="30")
     parser.add_argument("--eps", type=none_or_float, default="5.0") #privacy level
     parser.add_argument("--trace", type=str_bool, default="False")
