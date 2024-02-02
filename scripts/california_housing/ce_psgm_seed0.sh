@@ -20,29 +20,29 @@ conda activate ce-plsgd
 run() {
     for c in 1 3 10 30 100
     do
-	python src/train.py \
-	       --eta $eta \
-	       --n_workers $n_workers \
-	       --seed $seed \
-	       --dataset_name $dataset_name \
-	       --model_name $model_name \
-	       --optimizer_name $optimizer_name \
-	       --exp_name $exp_name \
-	       --n_global_iters $n_global_iters \
-	       --n_local_iters $n_local_iters \
-	       --weight_decay $weight_decay \
-	       --save_intvl $save_intvl \
-	       --eps $eps \
-	       --delta $delta \
-	       --c $c
+      python src/train.py \
+             --eta $eta \
+             --n_workers $n_workers \
+             --seed $seed \
+             --dataset_name $dataset_name \
+             --model_name $model_name \
+             --optimizer_name $optimizer_name \
+             --exp_name $exp_name \
+             --n_global_iters $n_global_iters \
+             --n_local_iters $n_local_iters \
+             --weight_decay $weight_decay \
+             --save_intvl $save_intvl \
+             --eps $eps \
+             --delta $delta \
+             --c $c
     done
 }
 
 
 for eps in .6 .8 1
 do
-    mkdir -p out/$exp_name/eps$eps/$dataset_name/$model_name
-    run $c2 $tau $eps > out/$exp_name/eps$eps/$dataset_name/$model_name.out &
+    mkdir -p out/$exp_name/eps$eps/$dataset_name
+    run $eps > out/$exp_name/eps$eps/$dataset_name/$model_name.out &
 done
 
 
@@ -62,7 +62,6 @@ run2() {
 	   --model_name $model_name \
 	   --optimizer_name $optimizer_name \
 	   --exp_name $exp_name \
-	   --gpu_id $gpu_id \
 	   --n_global_iters $n_global_iters \
 	   --n_local_iters $n_local_iters \
 	   --weight_decay $weight_decay \
