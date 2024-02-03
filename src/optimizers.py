@@ -613,15 +613,15 @@ class CE_PLS_Client(Client):
         per_sample_grad_diff_norm = self._trace_per_sample_info(self._compute_per_sample_grad_diff)
         return per_sample_grad_diff_norm / (dist_params + 10 ** (-10))
 
-class CE_PLSGM_Client(CE_PLS_Client):
+class CE_PSGM_Client(CE_PLS_Client):
     def _compute_grad_estimator(self, input, target):
         assert self._n_iters == 1
         return self._ref_grads
 
 
-class CE_PLS_Server(Server):
+class CE_PS_Server(Server):
     def __init__(self, p0, p1, beta, c, c2, **kargs):
-        super(CE_PLS_Server, self).__init__(**kargs)
+        super(CE_PS_Server, self).__init__(**kargs)
         self._prev_round_model = copy.deepcopy(self._model)
         self._prev_stage_model = copy.deepcopy(self._model)
         self._p0 = p0
@@ -681,10 +681,7 @@ class CE_PLS_Server(Server):
             optimizer.update_prev_round_snap_shot()
         self._prev_round_model = copy.deepcopy(self._optimizers[0]._model)
 
-
-# Diff2 with GD-Routine
-# T=1 -> DP-GD.
-class CE_PLSGM_Server(CE_PLS_Server):
+class CE_PSGM_Server(CE_PS_Server):
     def _one_round_routine(self):
         i = self._update_count % self._n_workers
         self._optimizers[i].train()
@@ -692,4 +689,4 @@ class CE_PLSGM_Server(CE_PLS_Server):
 
     def _get_optimizer(self, **kargs):
         assert self._n_local_iters == 1
-        return CE_PLSGM_Client(**kargs)
+        return CE_PSGM_Client(**kargs)
