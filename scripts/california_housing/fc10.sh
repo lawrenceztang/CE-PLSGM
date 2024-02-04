@@ -63,4 +63,4 @@ run2() {
 
 
 eta=None
-run2 $1 > out/$exp_name/eps$eps/$dataset_name/$model_name/eta_{$eta}_c_{$c}_c2_{$c2}_tau_{$tau}.out
+run2 $1 > out/$exp_name/eps$eps/$dataset_name/$model_name/no_noise.out
