@@ -22,6 +22,8 @@ echo "Running with c=$c"
 	--optimizer_name ce_plsgm \
         --n_global_iters 500 \
         --eps $eps \
+        --model_name $model_name \
+        --exp_name $exp_name \
         --delta .00000001 \
         --c $c \
         --seed $1
@@ -32,7 +34,7 @@ echo "Running with c=$c"
 for eps in .6 1.2 1.8
 do
     echo "Running with eps=$eps$"
-    mkdir -p out/$exp_name/eps$eps/$dataset_name
+    mkdir -p out/$exp_name/eps$eps/$dataset_name/$model_name
     run $eps > out/$exp_name/eps$eps/$dataset_name/$model_name/ce_plsgm.out
 done
 
