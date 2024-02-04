@@ -48,14 +48,12 @@ run2() {
     python src/train.py \
 	   --eta $eta \
 	   --n_workers $n_workers \
-	   --seed $seed \
+	   --seed $1 \
 	   --dataset_name $dataset_name \
 	   --model_name $model_name \
-	   --optimizer_name $optimizer_name \
+	   --optimizer_name diff2_gd \
 	   --exp_name $exp_name \
 	   --n_global_iters $n_global_iters \
-	   --n_local_iters $n_local_iters \
-	   --weight_decay $weight_decay \
 	   --save_intvl $save_intvl \
 	   --eps $eps \
 	   --c $c \
@@ -65,4 +63,4 @@ run2() {
 
 
 eta=None
-run2 > out/$exp_name/eps$eps/$dataset_name/$model_name/eta_{$eta}_c_{$c}_c2_{$c2}_tau_{$tau}.out
+run2 $1 > out/$exp_name/eps$eps/$dataset_name/$model_name/eta_{$eta}_c_{$c}_c2_{$c2}_tau_{$tau}.out
