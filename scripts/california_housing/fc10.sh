@@ -1,14 +1,10 @@
 # Basic settings
-seed=0
-
 exp_name=20230123
-weight_decay=0.0
 n_global_iters=500
 delta=.00000001
 dataset_name=california_housing
 n_workers=10
 model_name=fc_10
-n_local_iters=1
 optimizer_name=ce_plsgm
 save_intvl=20
 eta=None
@@ -21,22 +17,23 @@ conda activate ce-plsgm
 run() {
     for c in 1 3 10 30 100
     do
-echo "Runing with c=$c"
+echo "Running with c=$c"
         python src/train.py \
 	--optimizer_name ce_plsgm \
         --n_global_iters 500 \
         --eps $eps \
-        --delta .00000001   
-        --c $c 
+        --delta .00000001 \
+        --c $c \
+        --seed $1
     done
 }
 
 
-for eps in .6 .8 1
+for eps in .6 1.2 1.8
 do
     echo "Running with eps=$eps$"
     mkdir -p out/$exp_name/eps$eps/$dataset_name
-    run $eps > out/$exp_name/eps$eps/$dataset_name/$model_name.out
+    run $eps > out/$exp_name/eps$eps/$dataset_name/$model_name/ce_plsgm.out
 done
 
 
@@ -66,6 +63,6 @@ run2() {
 	   --tau $tau
 }
 
-mkdir -p out/$exp_name/eps$eps/$dataset_name/$model_name
+
 eta=None
 run2 > out/$exp_name/eps$eps/$dataset_name/$model_name/eta_{$eta}_c_{$c}_c2_{$c2}_tau_{$tau}.out
