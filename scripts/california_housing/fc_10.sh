@@ -26,7 +26,7 @@ echo "Running with c=$c"
         --exp_name $exp_name \
         --delta .00000001 \
         --c $c \
-        --seed $1
+        --seed $2
     done
 }
 
@@ -35,7 +35,7 @@ for eps in .6 1.2 1.8
 do
     echo "Running with eps=$eps$"
     mkdir -p out/$exp_name/eps$eps/$dataset_name/$model_name
-    run $eps > out/$exp_name/eps$eps/$dataset_name/$model_name/ce_plsgm.out
+    run $eps $1 > out/$exp_name/eps$eps/$dataset_name/$model_name/ce_plsgm.out
 done
 
 
