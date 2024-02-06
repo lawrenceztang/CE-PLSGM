@@ -174,7 +174,7 @@ def train(**kargs):
             if kargs["trace"]:
                 print(f"Loss Lip: {loss_lip}, Loss Sm: {loss_sm}, Risk Sm: {risk_sm}")
 
-            if patience_count >= 5 or np.isnan(train_loss): 
+            if patience_count >= 3 or np.isnan(train_loss):
                 print("Learning was stopped")
                 success_flag =False
                 break
