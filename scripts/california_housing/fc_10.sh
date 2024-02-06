@@ -17,7 +17,7 @@ conda activate ce-plsgm
 run() {
     for c in 1 3 10 30 100
     do
-echo "Running with c=$c"
+echo "Running with c=$c, seed=$2"
         python src/train.py \
 	--optimizer_name ce_plsgm \
         --n_global_iters 500 \
@@ -33,9 +33,9 @@ echo "Running with c=$c"
 
 for eps in .6 1.2 1.8
 do
-    echo "Running with eps=$eps$"
-    mkdir -p out/$exp_name/eps$eps/$dataset_name/$model_name
-    run $eps $1 > out/$exp_name/eps$eps/$dataset_name/$model_name/ce_plsgm.out
+    echo "Running with eps=$eps, seed=$1"
+    mkdir -p out/$exp_name/eps$eps/$dataset_name/seed$1/$model_name
+    run $eps $1 > out/$exp_name/eps$eps/$dataset_name/seed$1/$model_name/ce_plsgm.out
 done
 
 
@@ -65,4 +65,4 @@ run2() {
 
 
 eta=None
-run2 $1 > out/$exp_name/eps$eps/$dataset_name/$model_name/no_noise.out
+run2 $1 > out/$exp_name/eps$eps/$dataset_name/seed$1/$model_name/no_noise.out

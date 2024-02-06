@@ -1,0 +1,624 @@
+Running with c=1, seed=1
+GPU Not Enabled
+Learning rate eta = 1.0
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.1307278573513031, Train Acc: 0.0, Train Grad Norm 2.445134162902832, | Test Loss: 0.3459515869617462, Test Acc: 0.0, Test Grad Norm: 10.829141616821289 | Elapsed Time: 21.844876289367676
+Iter: 40 | Train Loss: 0.17115026712417603, Train Acc: 0.0, Train Grad Norm 0.4511467516422272, | Test Loss: 0.8497693538665771, Test Acc: 0.0, Test Grad Norm: 20.972017288208008 | Elapsed Time: 43.57820439338684
+Patience count 1
+Iter: 60 | Train Loss: 0.42097440361976624, Train Acc: 0.0, Train Grad Norm 2.4425225257873535, | Test Loss: 1.301132321357727, Test Acc: 0.0, Test Grad Norm: 36.466583251953125 | Elapsed Time: 65.4937174320221
+Patience count 2
+Iter: 80 | Train Loss: 0.1917528659105301, Train Acc: 0.0, Train Grad Norm 0.8217470049858093, | Test Loss: 0.5837389230728149, Test Acc: 0.0, Test Grad Norm: 11.824158668518066 | Elapsed Time: 87.27146291732788
+Patience count 3
+Iter: 100 | Train Loss: 0.4369962215423584, Train Acc: 0.0, Train Grad Norm 4.545738697052002, | Test Loss: 0.4970378875732422, Test Acc: 0.0, Test Grad Norm: 10.060797691345215 | Elapsed Time: 109.02982425689697
+Patience count 4
+Iter: 120 | Train Loss: 0.5255915522575378, Train Acc: 0.0, Train Grad Norm 8.438064575195312, | Test Loss: 0.5613207817077637, Test Acc: 0.0, Test Grad Norm: 10.423301696777344 | Elapsed Time: 130.87438321113586
+Patience count 5
+Iter: 140 | Train Loss: 0.6151384115219116, Train Acc: 0.0, Train Grad Norm 14.350665092468262, | Test Loss: 0.8740982413291931, Test Acc: 0.0, Test Grad Norm: 29.11125946044922 | Elapsed Time: 152.74997758865356
+Learning was stopped
+Learning rate eta = 0.5
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.28914207220077515, Train Acc: 0.0, Train Grad Norm 5.994957447052002, | Test Loss: 0.400625079870224, Test Acc: 0.0, Test Grad Norm: 12.854475975036621 | Elapsed Time: 21.811121463775635
+Iter: 40 | Train Loss: 0.10586827993392944, Train Acc: 0.0, Train Grad Norm 1.0999763011932373, | Test Loss: 0.1490911841392517, Test Acc: 0.0, Test Grad Norm: 3.756903886795044 | Elapsed Time: 43.542914152145386
+Iter: 60 | Train Loss: 0.10234155505895615, Train Acc: 0.0, Train Grad Norm 0.4304467737674713, | Test Loss: 0.23765872418880463, Test Acc: 0.0, Test Grad Norm: 8.73820972442627 | Elapsed Time: 65.43656349182129
+Iter: 80 | Train Loss: 0.11723651736974716, Train Acc: 0.0, Train Grad Norm 0.5833627581596375, | Test Loss: 0.2629314959049225, Test Acc: 0.0, Test Grad Norm: 7.634082794189453 | Elapsed Time: 87.19140911102295
+Patience count 1
+Iter: 100 | Train Loss: 0.1563013345003128, Train Acc: 0.0, Train Grad Norm 1.495456576347351, | Test Loss: 0.5817947387695312, Test Acc: 0.0, Test Grad Norm: 23.977203369140625 | Elapsed Time: 109.0433042049408
+Patience count 2
+Iter: 120 | Train Loss: 0.10487765818834305, Train Acc: 0.0, Train Grad Norm 0.6446341872215271, | Test Loss: 0.24344469606876373, Test Acc: 0.0, Test Grad Norm: 7.485029220581055 | Elapsed Time: 130.80828857421875
+Iter: 140 | Train Loss: 0.08025947958230972, Train Acc: 0.0, Train Grad Norm 0.2588399052619934, | Test Loss: 0.1344616562128067, Test Acc: 0.0, Test Grad Norm: 2.3058571815490723 | Elapsed Time: 152.70145511627197
+Iter: 160 | Train Loss: 0.08451893925666809, Train Acc: 0.0, Train Grad Norm 0.5885118842124939, | Test Loss: 0.08496109396219254, Test Acc: 0.0, Test Grad Norm: 0.7003368735313416 | Elapsed Time: 174.44371604919434
+Patience count 1
+Iter: 180 | Train Loss: 0.05127963423728943, Train Acc: 0.0, Train Grad Norm 0.13996127247810364, | Test Loss: 0.060114167630672455, Test Acc: 0.0, Test Grad Norm: 0.30666014552116394 | Elapsed Time: 196.25659894943237
+Iter: 200 | Train Loss: 0.07285869121551514, Train Acc: 0.0, Train Grad Norm 0.23107010126113892, | Test Loss: 0.2398376762866974, Test Acc: 0.0, Test Grad Norm: 6.34232759475708 | Elapsed Time: 218.10184288024902
+Patience count 1
+Iter: 220 | Train Loss: 0.05972618982195854, Train Acc: 0.0, Train Grad Norm 0.20416812598705292, | Test Loss: 0.18614459037780762, Test Acc: 0.0, Test Grad Norm: 4.433129787445068 | Elapsed Time: 239.92299842834473
+Patience count 2
+Iter: 240 | Train Loss: 0.04531918093562126, Train Acc: 0.0, Train Grad Norm 0.08290982246398926, | Test Loss: 0.04685664549469948, Test Acc: 0.0, Test Grad Norm: 0.16666916012763977 | Elapsed Time: 261.6733748912811
+Iter: 260 | Train Loss: 0.1241593137383461, Train Acc: 0.0, Train Grad Norm 0.7465686798095703, | Test Loss: 0.28039735555648804, Test Acc: 0.0, Test Grad Norm: 6.760906219482422 | Elapsed Time: 283.5815851688385
+Patience count 1
+Iter: 280 | Train Loss: 0.2068936675786972, Train Acc: 0.0, Train Grad Norm 2.2507309913635254, | Test Loss: 0.6809355020523071, Test Acc: 0.0, Test Grad Norm: 25.512367248535156 | Elapsed Time: 305.3745484352112
+Patience count 2
+Iter: 300 | Train Loss: 0.11255873739719391, Train Acc: 0.0, Train Grad Norm 0.9215524792671204, | Test Loss: 0.11444507539272308, Test Acc: 0.0, Test Grad Norm: 1.6893980503082275 | Elapsed Time: 327.14518761634827
+Patience count 3
+Iter: 320 | Train Loss: 0.05448474362492561, Train Acc: 0.0, Train Grad Norm 0.06349685043096542, | Test Loss: 0.08719843626022339, Test Acc: 0.0, Test Grad Norm: 1.3384121656417847 | Elapsed Time: 349.02114391326904
+Patience count 4
+Iter: 340 | Train Loss: 0.08327406644821167, Train Acc: 0.0, Train Grad Norm 0.30866673588752747, | Test Loss: 0.23501092195510864, Test Acc: 0.0, Test Grad Norm: 7.2784857749938965 | Elapsed Time: 370.81765246391296
+Patience count 5
+Iter: 360 | Train Loss: 0.10566915571689606, Train Acc: 0.0, Train Grad Norm 0.860099732875824, | Test Loss: 0.21494650840759277, Test Acc: 0.0, Test Grad Norm: 6.3830132484436035 | Elapsed Time: 392.68524050712585
+Learning was stopped
+Learning rate eta = 0.25
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.6057044267654419, Train Acc: 0.0, Train Grad Norm 15.63133430480957, | Test Loss: 0.7585522532463074, Test Acc: 0.0, Test Grad Norm: 24.936010360717773 | Elapsed Time: 21.90312123298645
+Iter: 40 | Train Loss: 0.3655441701412201, Train Acc: 0.0, Train Grad Norm 9.181001663208008, | Test Loss: 0.4079270660877228, Test Acc: 0.0, Test Grad Norm: 12.871872901916504 | Elapsed Time: 43.79451632499695
+Iter: 60 | Train Loss: 0.19634757936000824, Train Acc: 0.0, Train Grad Norm 4.565755844116211, | Test Loss: 0.1882701814174652, Test Acc: 0.0, Test Grad Norm: 4.3032989501953125 | Elapsed Time: 65.74610209465027
+Iter: 80 | Train Loss: 0.10068785399198532, Train Acc: 0.0, Train Grad Norm 1.506345510482788, | Test Loss: 0.12584680318832397, Test Acc: 0.0, Test Grad Norm: 1.2342323064804077 | Elapsed Time: 87.8603994846344
+Iter: 100 | Train Loss: 0.07823814451694489, Train Acc: 0.0, Train Grad Norm 0.5529444217681885, | Test Loss: 0.16659875214099884, Test Acc: 0.0, Test Grad Norm: 1.6916544437408447 | Elapsed Time: 109.66145133972168
+Iter: 120 | Train Loss: 0.055977486073970795, Train Acc: 0.0, Train Grad Norm 0.1879808008670807, | Test Loss: 0.07755769044160843, Test Acc: 0.0, Test Grad Norm: 0.39813196659088135 | Elapsed Time: 131.52511620521545
+Iter: 140 | Train Loss: 0.06015312299132347, Train Acc: 0.0, Train Grad Norm 0.07724229991436005, | Test Loss: 0.11401922255754471, Test Acc: 0.0, Test Grad Norm: 0.9318410754203796 | Elapsed Time: 153.29601049423218
+Patience count 1
+Iter: 160 | Train Loss: 0.08016691356897354, Train Acc: 0.0, Train Grad Norm 0.28422462940216064, | Test Loss: 0.16920553147792816, Test Acc: 0.0, Test Grad Norm: 2.346987009048462 | Elapsed Time: 175.20195245742798
+Patience count 2
+Iter: 180 | Train Loss: 0.1327960044145584, Train Acc: 0.0, Train Grad Norm 0.5641907453536987, | Test Loss: 0.3248683214187622, Test Acc: 0.0, Test Grad Norm: 5.6757121086120605 | Elapsed Time: 197.00120568275452
+Patience count 3
+Iter: 200 | Train Loss: 0.11483658850193024, Train Acc: 0.0, Train Grad Norm 0.39086389541625977, | Test Loss: 0.2567446529865265, Test Acc: 0.0, Test Grad Norm: 3.66508412361145 | Elapsed Time: 218.89001560211182
+Patience count 4
+Iter: 220 | Train Loss: 0.10828740894794464, Train Acc: 0.0, Train Grad Norm 0.2187575250864029, | Test Loss: 0.33297228813171387, Test Acc: 0.0, Test Grad Norm: 6.017380237579346 | Elapsed Time: 240.76999020576477
+Patience count 5
+Iter: 240 | Train Loss: 0.08891815692186356, Train Acc: 0.0, Train Grad Norm 0.22163526713848114, | Test Loss: 0.2918470501899719, Test Acc: 0.0, Test Grad Norm: 6.100383758544922 | Elapsed Time: 262.5461730957031
+Learning was stopped
+Learning rate eta = 0.125
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.8524609804153442, Train Acc: 0.0, Train Grad Norm 21.55687141418457, | Test Loss: 0.9750257134437561, Test Acc: 0.0, Test Grad Norm: 29.166427612304688 | Elapsed Time: 21.767153024673462
+Iter: 40 | Train Loss: 0.6955138444900513, Train Acc: 0.0, Train Grad Norm 17.195547103881836, | Test Loss: 0.8212035894393921, Test Acc: 0.0, Test Grad Norm: 23.876134872436523 | Elapsed Time: 43.640414237976074
+Iter: 60 | Train Loss: 0.5350072979927063, Train Acc: 0.0, Train Grad Norm 13.076532363891602, | Test Loss: 0.6470347046852112, Test Acc: 0.0, Test Grad Norm: 19.229427337646484 | Elapsed Time: 65.48937797546387
+Iter: 80 | Train Loss: 0.4086853861808777, Train Acc: 0.0, Train Grad Norm 9.380547523498535, | Test Loss: 0.5010179877281189, Test Acc: 0.0, Test Grad Norm: 13.716286659240723 | Elapsed Time: 87.26985383033752
+Iter: 100 | Train Loss: 0.31672030687332153, Train Acc: 0.0, Train Grad Norm 6.710598945617676, | Test Loss: 0.3904573917388916, Test Acc: 0.0, Test Grad Norm: 9.527932167053223 | Elapsed Time: 109.15587496757507
+Iter: 120 | Train Loss: 0.2381541132926941, Train Acc: 0.0, Train Grad Norm 4.938054084777832, | Test Loss: 0.29005324840545654, Test Acc: 0.0, Test Grad Norm: 6.885918140411377 | Elapsed Time: 130.91914701461792
+Iter: 140 | Train Loss: 0.17953501641750336, Train Acc: 0.0, Train Grad Norm 3.5199801921844482, | Test Loss: 0.25314784049987793, Test Acc: 0.0, Test Grad Norm: 5.952481746673584 | Elapsed Time: 152.7589509487152
+Iter: 160 | Train Loss: 0.13869330286979675, Train Acc: 0.0, Train Grad Norm 2.3150994777679443, | Test Loss: 0.2361874282360077, Test Acc: 0.0, Test Grad Norm: 5.333087921142578 | Elapsed Time: 174.52868747711182
+Iter: 180 | Train Loss: 0.10248669981956482, Train Acc: 0.0, Train Grad Norm 1.3892179727554321, | Test Loss: 0.18095287680625916, Test Acc: 0.0, Test Grad Norm: 3.4226019382476807 | Elapsed Time: 196.4447078704834
+Iter: 200 | Train Loss: 0.08413966000080109, Train Acc: 0.0, Train Grad Norm 0.8055807948112488, | Test Loss: 0.15508277714252472, Test Acc: 0.0, Test Grad Norm: 2.351968288421631 | Elapsed Time: 218.2375681400299
+Iter: 220 | Train Loss: 0.0685376301407814, Train Acc: 0.0, Train Grad Norm 0.3970925509929657, | Test Loss: 0.13077224791049957, Test Acc: 0.0, Test Grad Norm: 1.501182198524475 | Elapsed Time: 240.05438566207886
+Iter: 240 | Train Loss: 0.06317060440778732, Train Acc: 0.0, Train Grad Norm 0.32540860772132874, | Test Loss: 0.11656313389539719, Test Acc: 0.0, Test Grad Norm: 1.241049885749817 | Elapsed Time: 261.91107296943665
+Iter: 260 | Train Loss: 0.058123212307691574, Train Acc: 0.0, Train Grad Norm 0.2231718748807907, | Test Loss: 0.12778392434120178, Test Acc: 0.0, Test Grad Norm: 1.2901030778884888 | Elapsed Time: 283.70112919807434
+Iter: 280 | Train Loss: 0.05232270807027817, Train Acc: 0.0, Train Grad Norm 0.20265385508537292, | Test Loss: 0.10804451256990433, Test Acc: 0.0, Test Grad Norm: 1.1156797409057617 | Elapsed Time: 305.4711227416992
+Iter: 300 | Train Loss: 0.049495019018650055, Train Acc: 0.0, Train Grad Norm 0.21308809518814087, | Test Loss: 0.07792854309082031, Test Acc: 0.0, Test Grad Norm: 0.728293776512146 | Elapsed Time: 327.3426010608673
+Iter: 320 | Train Loss: 0.043587591499090195, Train Acc: 0.0, Train Grad Norm 0.17199116945266724, | Test Loss: 0.05452418699860573, Test Acc: 0.0, Test Grad Norm: 0.3694763481616974 | Elapsed Time: 349.1320080757141
+Iter: 340 | Train Loss: 0.037449851632118225, Train Acc: 0.0, Train Grad Norm 0.09047127515077591, | Test Loss: 0.05128640681505203, Test Acc: 0.0, Test Grad Norm: 0.29688501358032227 | Elapsed Time: 370.8943212032318
+Iter: 360 | Train Loss: 0.03303885832428932, Train Acc: 0.0, Train Grad Norm 0.007810709998011589, | Test Loss: 0.03530941531062126, Test Acc: 0.0, Test Grad Norm: 0.03280625864863396 | Elapsed Time: 392.84483075141907
+Iter: 380 | Train Loss: 0.03467472642660141, Train Acc: 0.0, Train Grad Norm 0.009379186667501926, | Test Loss: 0.035447511821985245, Test Acc: 0.0, Test Grad Norm: 0.02122695930302143 | Elapsed Time: 414.6034462451935
+Iter: 400 | Train Loss: 0.037654418498277664, Train Acc: 0.0, Train Grad Norm 0.013930348679423332, | Test Loss: 0.040335413068532944, Test Acc: 0.0, Test Grad Norm: 0.047833651304244995 | Elapsed Time: 436.4326400756836
+Patience count 1
+Iter: 420 | Train Loss: 0.040911633521318436, Train Acc: 0.0, Train Grad Norm 0.06384637951850891, | Test Loss: 0.04369194433093071, Test Acc: 0.0, Test Grad Norm: 0.11411207169294357 | Elapsed Time: 458.3200807571411
+Patience count 2
+Iter: 440 | Train Loss: 0.04304032027721405, Train Acc: 0.0, Train Grad Norm 0.08053307235240936, | Test Loss: 0.04408765956759453, Test Acc: 0.0, Test Grad Norm: 0.11603233218193054 | Elapsed Time: 480.13812804222107
+Patience count 3
+Iter: 460 | Train Loss: 0.051330942660570145, Train Acc: 0.0, Train Grad Norm 0.13757716119289398, | Test Loss: 0.06505206227302551, Test Acc: 0.0, Test Grad Norm: 0.3398628830909729 | Elapsed Time: 501.8843433856964
+Patience count 4
+Iter: 480 | Train Loss: 0.047369763255119324, Train Acc: 0.0, Train Grad Norm 0.09005499631166458, | Test Loss: 0.059554122388362885, Test Acc: 0.0, Test Grad Norm: 0.25119391083717346 | Elapsed Time: 523.8124392032623
+Patience count 5
+Iter: 500 | Train Loss: 0.044753387570381165, Train Acc: 0.0, Train Grad Norm 0.05896902456879616, | Test Loss: 0.05086902901530266, Test Acc: 0.0, Test Grad Norm: 0.13824261724948883 | Elapsed Time: 545.5655739307404
+Learning was stopped
+Learning rate eta = 0.0625
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.88680499792099, Train Acc: 0.0, Train Grad Norm 22.101533889770508, | Test Loss: 1.0269722938537598, Test Acc: 0.0, Test Grad Norm: 30.8620662689209 | Elapsed Time: 21.85349154472351
+Iter: 40 | Train Loss: 0.7605830430984497, Train Acc: 0.0, Train Grad Norm 19.04399871826172, | Test Loss: 0.8928509950637817, Test Acc: 0.0, Test Grad Norm: 27.457895278930664 | Elapsed Time: 43.63292932510376
+Iter: 60 | Train Loss: 0.6133340001106262, Train Acc: 0.0, Train Grad Norm 15.08533763885498, | Test Loss: 0.7103759050369263, Test Acc: 0.0, Test Grad Norm: 21.405353546142578 | Elapsed Time: 65.52436923980713
+Iter: 80 | Train Loss: 0.508782684803009, Train Acc: 0.0, Train Grad Norm 12.477888107299805, | Test Loss: 0.5881578922271729, Test Acc: 0.0, Test Grad Norm: 17.582008361816406 | Elapsed Time: 87.29903507232666
+Iter: 100 | Train Loss: 0.43121203780174255, Train Acc: 0.0, Train Grad Norm 10.45937728881836, | Test Loss: 0.4958629012107849, Test Acc: 0.0, Test Grad Norm: 14.658024787902832 | Elapsed Time: 109.08591914176941
+Iter: 120 | Train Loss: 0.320693701505661, Train Acc: 0.0, Train Grad Norm 7.573696613311768, | Test Loss: 0.3484429121017456, Test Acc: 0.0, Test Grad Norm: 9.900178909301758 | Elapsed Time: 130.99437856674194
+Iter: 140 | Train Loss: 0.2498796284198761, Train Acc: 0.0, Train Grad Norm 5.684208393096924, | Test Loss: 0.261951208114624, Test Acc: 0.0, Test Grad Norm: 7.055282115936279 | Elapsed Time: 152.81196355819702
+Iter: 160 | Train Loss: 0.18656115233898163, Train Acc: 0.0, Train Grad Norm 4.0181884765625, | Test Loss: 0.18532882630825043, Test Acc: 0.0, Test Grad Norm: 4.508954048156738 | Elapsed Time: 174.64824843406677
+Iter: 180 | Train Loss: 0.15302260220050812, Train Acc: 0.0, Train Grad Norm 3.094832420349121, | Test Loss: 0.14714543521404266, Test Acc: 0.0, Test Grad Norm: 3.2225375175476074 | Elapsed Time: 196.53486037254333
+Iter: 200 | Train Loss: 0.13004092872142792, Train Acc: 0.0, Train Grad Norm 2.492593765258789, | Test Loss: 0.12477254867553711, Test Acc: 0.0, Test Grad Norm: 2.48362398147583 | Elapsed Time: 218.376478433609
+Iter: 220 | Train Loss: 0.1071419045329094, Train Acc: 0.0, Train Grad Norm 1.8798508644104004, | Test Loss: 0.10159997642040253, Test Acc: 0.0, Test Grad Norm: 1.7924493551254272 | Elapsed Time: 240.1794593334198
+Iter: 240 | Train Loss: 0.08217550814151764, Train Acc: 0.0, Train Grad Norm 1.2102454900741577, | Test Loss: 0.07760769128799438, Test Acc: 0.0, Test Grad Norm: 1.0604445934295654 | Elapsed Time: 262.1528000831604
+Iter: 260 | Train Loss: 0.06162906810641289, Train Acc: 0.0, Train Grad Norm 0.6168444752693176, | Test Loss: 0.05835295841097832, Test Acc: 0.0, Test Grad Norm: 0.5123950242996216 | Elapsed Time: 283.9687068462372
+Iter: 280 | Train Loss: 0.05033346265554428, Train Acc: 0.0, Train Grad Norm 0.28049737215042114, | Test Loss: 0.04970749840140343, Test Acc: 0.0, Test Grad Norm: 0.18992936611175537 | Elapsed Time: 305.80610966682434
+Iter: 300 | Train Loss: 0.044823359698057175, Train Acc: 0.0, Train Grad Norm 0.1472623348236084, | Test Loss: 0.04660790041089058, Test Acc: 0.0, Test Grad Norm: 0.09177350997924805 | Elapsed Time: 327.68675422668457
+Iter: 320 | Train Loss: 0.04080755263566971, Train Acc: 0.0, Train Grad Norm 0.0381922721862793, | Test Loss: 0.04655586555600166, Test Acc: 0.0, Test Grad Norm: 0.0752401351928711 | Elapsed Time: 349.6063914299011
+Iter: 340 | Train Loss: 0.03982078656554222, Train Acc: 0.0, Train Grad Norm 0.008361387997865677, | Test Loss: 0.04576677829027176, Test Acc: 0.0, Test Grad Norm: 0.10434287041425705 | Elapsed Time: 371.39497089385986
+Iter: 360 | Train Loss: 0.03929166868329048, Train Acc: 0.0, Train Grad Norm 0.00930030643939972, | Test Loss: 0.04302680492401123, Test Acc: 0.0, Test Grad Norm: 0.0557570606470108 | Elapsed Time: 393.2694561481476
+Iter: 380 | Train Loss: 0.039179932326078415, Train Acc: 0.0, Train Grad Norm 0.011749395169317722, | Test Loss: 0.045898567885160446, Test Acc: 0.0, Test Grad Norm: 0.09081294387578964 | Elapsed Time: 415.1623122692108
+Iter: 400 | Train Loss: 0.03838192671537399, Train Acc: 0.0, Train Grad Norm 0.01803538016974926, | Test Loss: 0.04054898023605347, Test Acc: 0.0, Test Grad Norm: 0.03216741606593132 | Elapsed Time: 436.923504114151
+Iter: 420 | Train Loss: 0.038818053901195526, Train Acc: 0.0, Train Grad Norm 0.020594246685504913, | Test Loss: 0.039015524089336395, Test Acc: 0.0, Test Grad Norm: 0.012691081501543522 | Elapsed Time: 458.7089366912842
+Iter: 440 | Train Loss: 0.03741474449634552, Train Acc: 0.0, Train Grad Norm 0.008751318790018559, | Test Loss: 0.038121018558740616, Test Acc: 0.0, Test Grad Norm: 0.014992919750511646 | Elapsed Time: 480.5639650821686
+Iter: 460 | Train Loss: 0.03725647181272507, Train Acc: 0.0, Train Grad Norm 0.009033509530127048, | Test Loss: 0.039382364600896835, Test Acc: 0.0, Test Grad Norm: 0.043042730540037155 | Elapsed Time: 502.39671897888184
+Iter: 480 | Train Loss: 0.036738257855176926, Train Acc: 0.0, Train Grad Norm 0.015687469393014908, | Test Loss: 0.04366041347384453, Test Acc: 0.0, Test Grad Norm: 0.14071589708328247 | Elapsed Time: 524.2081661224365
+Iter: 500 | Train Loss: 0.03646652400493622, Train Acc: 0.0, Train Grad Norm 0.01613430865108967, | Test Loss: 0.0427837073802948, Test Acc: 0.0, Test Grad Norm: 0.12800349295139313 | Elapsed Time: 546.0995738506317
+Running with c=3, seed=1
+GPU Not Enabled
+Learning rate eta = 1.0
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.06273388862609863, Train Acc: 0.0, Train Grad Norm 0.09821160137653351, | Test Loss: 0.08011408150196075, Test Acc: 0.0, Test Grad Norm: 0.46377068758010864 | Elapsed Time: 21.817899465560913
+Iter: 40 | Train Loss: 0.15347875654697418, Train Acc: 0.0, Train Grad Norm 1.8335665464401245, | Test Loss: 0.3274581730365753, Test Acc: 0.0, Test Grad Norm: 21.144649505615234 | Elapsed Time: 43.599180459976196
+Patience count 1
+Iter: 60 | Train Loss: 0.17222028970718384, Train Acc: 0.0, Train Grad Norm 0.8401806950569153, | Test Loss: 0.24606384336948395, Test Acc: 0.0, Test Grad Norm: 8.16427993774414 | Elapsed Time: 65.4482970237732
+Patience count 2
+Iter: 80 | Train Loss: 0.3166985511779785, Train Acc: 0.0, Train Grad Norm 4.338801383972168, | Test Loss: 1.0945764780044556, Test Acc: 0.0, Test Grad Norm: 84.79193115234375 | Elapsed Time: 87.268869638443
+Patience count 3
+Iter: 100 | Train Loss: 1.376571774482727, Train Acc: 0.0, Train Grad Norm 27.05898666381836, | Test Loss: 6.405688762664795, Test Acc: 0.0, Test Grad Norm: 615.606689453125 | Elapsed Time: 109.07603526115417
+Patience count 4
+Iter: 120 | Train Loss: 2.4280483722686768, Train Acc: 0.0, Train Grad Norm 45.27836227416992, | Test Loss: 18.683822631835938, Test Acc: 0.0, Test Grad Norm: 2654.7890625 | Elapsed Time: 130.93090271949768
+Patience count 5
+Iter: 140 | Train Loss: 0.9735223054885864, Train Acc: 0.0, Train Grad Norm 11.685997009277344, | Test Loss: 7.395968437194824, Test Acc: 0.0, Test Grad Norm: 751.109619140625 | Elapsed Time: 152.82812547683716
+Learning was stopped
+Learning rate eta = 0.5
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.3850986063480377, Train Acc: 0.0, Train Grad Norm 9.135546684265137, | Test Loss: 0.6791220307350159, Test Acc: 0.0, Test Grad Norm: 23.253704071044922 | Elapsed Time: 21.81223726272583
+Iter: 40 | Train Loss: 0.10832370072603226, Train Acc: 0.0, Train Grad Norm 2.1134848594665527, | Test Loss: 0.22119329869747162, Test Acc: 0.0, Test Grad Norm: 6.949531555175781 | Elapsed Time: 43.61681795120239
+Iter: 60 | Train Loss: 0.0523635670542717, Train Acc: 0.0, Train Grad Norm 0.17730286717414856, | Test Loss: 0.17769348621368408, Test Acc: 0.0, Test Grad Norm: 4.823947906494141 | Elapsed Time: 65.62573409080505
+Iter: 80 | Train Loss: 0.05558796226978302, Train Acc: 0.0, Train Grad Norm 0.10009028017520905, | Test Loss: 0.09605713933706284, Test Acc: 0.0, Test Grad Norm: 1.743768334388733 | Elapsed Time: 87.43572306632996
+Patience count 1
+Iter: 100 | Train Loss: 0.08214488625526428, Train Acc: 0.0, Train Grad Norm 0.27988457679748535, | Test Loss: 0.1632012575864792, Test Acc: 0.0, Test Grad Norm: 3.2458956241607666 | Elapsed Time: 109.3257040977478
+Patience count 2
+Iter: 120 | Train Loss: 0.03855063021183014, Train Acc: 0.0, Train Grad Norm 0.06107113137841225, | Test Loss: 0.11423342674970627, Test Acc: 0.0, Test Grad Norm: 2.3777921199798584 | Elapsed Time: 131.1550214290619
+Iter: 140 | Train Loss: 0.06886731088161469, Train Acc: 0.0, Train Grad Norm 0.1165953055024147, | Test Loss: 0.3334220349788666, Test Acc: 0.0, Test Grad Norm: 7.008997440338135 | Elapsed Time: 153.11706447601318
+Patience count 1
+Iter: 160 | Train Loss: 0.09121143072843552, Train Acc: 0.0, Train Grad Norm 0.18583521246910095, | Test Loss: 0.45297056436538696, Test Acc: 0.0, Test Grad Norm: 10.774665832519531 | Elapsed Time: 174.97765040397644
+Patience count 2
+Iter: 180 | Train Loss: 0.07714158296585083, Train Acc: 0.0, Train Grad Norm 0.1413682997226715, | Test Loss: 0.26081064343452454, Test Acc: 0.0, Test Grad Norm: 4.9077606201171875 | Elapsed Time: 196.85462474822998
+Patience count 3
+Iter: 200 | Train Loss: 0.07506149262189865, Train Acc: 0.0, Train Grad Norm 0.18601113557815552, | Test Loss: 0.2655573785305023, Test Acc: 0.0, Test Grad Norm: 5.381748199462891 | Elapsed Time: 218.7849245071411
+Patience count 4
+Iter: 220 | Train Loss: 0.15012462437152863, Train Acc: 0.0, Train Grad Norm 0.5526289939880371, | Test Loss: 0.5988945960998535, Test Acc: 0.0, Test Grad Norm: 13.994306564331055 | Elapsed Time: 240.65571069717407
+Patience count 5
+Iter: 240 | Train Loss: 0.22120970487594604, Train Acc: 0.0, Train Grad Norm 1.1278671026229858, | Test Loss: 0.7513917088508606, Test Acc: 0.0, Test Grad Norm: 18.548158645629883 | Elapsed Time: 262.5138404369354
+Learning was stopped
+Learning rate eta = 0.25
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.6021766662597656, Train Acc: 0.0, Train Grad Norm 14.295654296875, | Test Loss: 0.8063308596611023, Test Acc: 0.0, Test Grad Norm: 24.31005859375 | Elapsed Time: 21.9153151512146
+Iter: 40 | Train Loss: 0.4073616862297058, Train Acc: 0.0, Train Grad Norm 9.106938362121582, | Test Loss: 0.6667332649230957, Test Acc: 0.0, Test Grad Norm: 20.879087448120117 | Elapsed Time: 43.79331111907959
+Iter: 60 | Train Loss: 0.23659951984882355, Train Acc: 0.0, Train Grad Norm 5.019085884094238, | Test Loss: 0.3296421468257904, Test Acc: 0.0, Test Grad Norm: 9.580970764160156 | Elapsed Time: 65.61511278152466
+Iter: 80 | Train Loss: 0.22240954637527466, Train Acc: 0.0, Train Grad Norm 4.563201904296875, | Test Loss: 0.37445640563964844, Test Acc: 0.0, Test Grad Norm: 12.107942581176758 | Elapsed Time: 87.58344340324402
+Iter: 100 | Train Loss: 0.12321355938911438, Train Acc: 0.0, Train Grad Norm 1.7217885255813599, | Test Loss: 0.25021490454673767, Test Acc: 0.0, Test Grad Norm: 7.563004016876221 | Elapsed Time: 109.4377224445343
+Iter: 120 | Train Loss: 0.07550591230392456, Train Acc: 0.0, Train Grad Norm 0.6005210280418396, | Test Loss: 0.10866659879684448, Test Acc: 0.0, Test Grad Norm: 2.1848435401916504 | Elapsed Time: 131.31345200538635
+Iter: 140 | Train Loss: 0.05269570276141167, Train Acc: 0.0, Train Grad Norm 0.054914891719818115, | Test Loss: 0.059737324714660645, Test Acc: 0.0, Test Grad Norm: 0.3519948422908783 | Elapsed Time: 153.2762942314148
+Iter: 160 | Train Loss: 0.04611511155962944, Train Acc: 0.0, Train Grad Norm 0.032525498420000076, | Test Loss: 0.059872858226299286, Test Acc: 0.0, Test Grad Norm: 0.32549893856048584 | Elapsed Time: 175.20684933662415
+Iter: 180 | Train Loss: 0.047744784504175186, Train Acc: 0.0, Train Grad Norm 0.14517658948898315, | Test Loss: 0.06844483315944672, Test Acc: 0.0, Test Grad Norm: 0.5205024480819702 | Elapsed Time: 197.05109119415283
+Iter: 200 | Train Loss: 0.04765170440077782, Train Acc: 0.0, Train Grad Norm 0.09482450783252716, | Test Loss: 0.06504050642251968, Test Acc: 0.0, Test Grad Norm: 0.4174622893333435 | Elapsed Time: 219.04130053520203
+Iter: 220 | Train Loss: 0.054902415722608566, Train Acc: 0.0, Train Grad Norm 0.09292852878570557, | Test Loss: 0.05563950538635254, Test Acc: 0.0, Test Grad Norm: 0.11302857100963593 | Elapsed Time: 240.87853240966797
+Patience count 1
+Iter: 240 | Train Loss: 0.10756830871105194, Train Acc: 0.0, Train Grad Norm 0.8702543377876282, | Test Loss: 0.09320501983165741, Test Acc: 0.0, Test Grad Norm: 1.3596798181533813 | Elapsed Time: 262.73759508132935
+Patience count 2
+Iter: 260 | Train Loss: 0.08833710849285126, Train Acc: 0.0, Train Grad Norm 0.6631483435630798, | Test Loss: 0.0738474503159523, Test Acc: 0.0, Test Grad Norm: 0.19004911184310913 | Elapsed Time: 284.691534280777
+Patience count 3
+Iter: 280 | Train Loss: 0.07341999560594559, Train Acc: 0.0, Train Grad Norm 0.25407925248146057, | Test Loss: 0.1441696286201477, Test Acc: 0.0, Test Grad Norm: 2.5471818447113037 | Elapsed Time: 306.57164692878723
+Patience count 4
+Iter: 300 | Train Loss: 0.08655130118131638, Train Acc: 0.0, Train Grad Norm 0.4067520499229431, | Test Loss: 0.12387148290872574, Test Acc: 0.0, Test Grad Norm: 1.3606796264648438 | Elapsed Time: 328.4124457836151
+Patience count 5
+Iter: 320 | Train Loss: 0.061429139226675034, Train Acc: 0.0, Train Grad Norm 0.23967033624649048, | Test Loss: 0.05903300642967224, Test Acc: 0.0, Test Grad Norm: 0.17416532337665558 | Elapsed Time: 350.3636038303375
+Learning was stopped
+Learning rate eta = 0.125
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.8309897184371948, Train Acc: 0.0, Train Grad Norm 20.87554168701172, | Test Loss: 0.9759290218353271, Test Acc: 0.0, Test Grad Norm: 30.0668888092041 | Elapsed Time: 21.919638633728027
+Iter: 40 | Train Loss: 0.6988392472267151, Train Acc: 0.0, Train Grad Norm 17.375871658325195, | Test Loss: 0.8598036170005798, Test Acc: 0.0, Test Grad Norm: 26.875577926635742 | Elapsed Time: 43.763131856918335
+Iter: 60 | Train Loss: 0.561410665512085, Train Acc: 0.0, Train Grad Norm 13.777740478515625, | Test Loss: 0.6681066155433655, Test Acc: 0.0, Test Grad Norm: 20.22502326965332 | Elapsed Time: 65.63766098022461
+Iter: 80 | Train Loss: 0.4518052339553833, Train Acc: 0.0, Train Grad Norm 10.9850435256958, | Test Loss: 0.5663833618164062, Test Acc: 0.0, Test Grad Norm: 17.210838317871094 | Elapsed Time: 87.56525444984436
+Iter: 100 | Train Loss: 0.30378952622413635, Train Acc: 0.0, Train Grad Norm 7.116170406341553, | Test Loss: 0.4182334244251251, Test Acc: 0.0, Test Grad Norm: 12.542336463928223 | Elapsed Time: 109.52545213699341
+Iter: 120 | Train Loss: 0.19099266827106476, Train Acc: 0.0, Train Grad Norm 4.0658440589904785, | Test Loss: 0.27839547395706177, Test Acc: 0.0, Test Grad Norm: 7.733298301696777 | Elapsed Time: 131.35854411125183
+Iter: 140 | Train Loss: 0.13684429228305817, Train Acc: 0.0, Train Grad Norm 2.6047844886779785, | Test Loss: 0.20444919168949127, Test Acc: 0.0, Test Grad Norm: 5.117771148681641 | Elapsed Time: 153.3556628227234
+Iter: 160 | Train Loss: 0.11369430273771286, Train Acc: 0.0, Train Grad Norm 1.9024823904037476, | Test Loss: 0.18534478545188904, Test Acc: 0.0, Test Grad Norm: 4.3408122062683105 | Elapsed Time: 175.21379613876343
+Iter: 180 | Train Loss: 0.09115767478942871, Train Acc: 0.0, Train Grad Norm 1.0700489282608032, | Test Loss: 0.18816328048706055, Test Acc: 0.0, Test Grad Norm: 3.6741724014282227 | Elapsed Time: 197.11917233467102
+Iter: 200 | Train Loss: 0.07686959207057953, Train Acc: 0.0, Train Grad Norm 0.5749683380126953, | Test Loss: 0.1450629085302353, Test Acc: 0.0, Test Grad Norm: 2.2316384315490723 | Elapsed Time: 219.04236578941345
+Iter: 220 | Train Loss: 0.06932540237903595, Train Acc: 0.0, Train Grad Norm 0.38987621665000916, | Test Loss: 0.12546208500862122, Test Acc: 0.0, Test Grad Norm: 1.7518043518066406 | Elapsed Time: 240.93146014213562
+Iter: 240 | Train Loss: 0.0681142807006836, Train Acc: 0.0, Train Grad Norm 0.2779003083705902, | Test Loss: 0.1184421256184578, Test Acc: 0.0, Test Grad Norm: 1.467058777809143 | Elapsed Time: 262.7831060886383
+Iter: 260 | Train Loss: 0.05550318956375122, Train Acc: 0.0, Train Grad Norm 0.13392512500286102, | Test Loss: 0.06713153421878815, Test Acc: 0.0, Test Grad Norm: 0.46060943603515625 | Elapsed Time: 284.78900623321533
+Iter: 280 | Train Loss: 0.05043651908636093, Train Acc: 0.0, Train Grad Norm 0.06469864398241043, | Test Loss: 0.050256773829460144, Test Acc: 0.0, Test Grad Norm: 0.13473907113075256 | Elapsed Time: 306.6547496318817
+Iter: 300 | Train Loss: 0.04838212952017784, Train Acc: 0.0, Train Grad Norm 0.08277852088212967, | Test Loss: 0.04587422311306, Test Acc: 0.0, Test Grad Norm: 0.11358842253684998 | Elapsed Time: 328.5094847679138
+Iter: 320 | Train Loss: 0.04111567512154579, Train Acc: 0.0, Train Grad Norm 0.042628660798072815, | Test Loss: 0.03847944363951683, Test Acc: 0.0, Test Grad Norm: 0.03772711753845215 | Elapsed Time: 350.4961495399475
+Iter: 340 | Train Loss: 0.03949293866753578, Train Acc: 0.0, Train Grad Norm 0.03469382971525192, | Test Loss: 0.037262603640556335, Test Acc: 0.0, Test Grad Norm: 0.02453443966805935 | Elapsed Time: 372.35590410232544
+Iter: 360 | Train Loss: 0.041299302130937576, Train Acc: 0.0, Train Grad Norm 0.026373205706477165, | Test Loss: 0.04090540483593941, Test Acc: 0.0, Test Grad Norm: 0.02205335535109043 | Elapsed Time: 394.23047375679016
+Iter: 380 | Train Loss: 0.04123877361416817, Train Acc: 0.0, Train Grad Norm 0.021745793521404266, | Test Loss: 0.04357508197426796, Test Acc: 0.0, Test Grad Norm: 0.04834556579589844 | Elapsed Time: 416.07782006263733
+Iter: 400 | Train Loss: 0.041122596710920334, Train Acc: 0.0, Train Grad Norm 0.019034404307603836, | Test Loss: 0.039477985352277756, Test Acc: 0.0, Test Grad Norm: 0.010314976796507835 | Elapsed Time: 438.0746257305145
+Iter: 420 | Train Loss: 0.03976228088140488, Train Acc: 0.0, Train Grad Norm 0.012534466572105885, | Test Loss: 0.03902188688516617, Test Acc: 0.0, Test Grad Norm: 0.010319250635802746 | Elapsed Time: 459.90813302993774
+Iter: 440 | Train Loss: 0.03997071459889412, Train Acc: 0.0, Train Grad Norm 0.0164266936480999, | Test Loss: 0.04030401259660721, Test Acc: 0.0, Test Grad Norm: 0.019758960232138634 | Elapsed Time: 481.82383584976196
+Iter: 460 | Train Loss: 0.03270536661148071, Train Acc: 0.0, Train Grad Norm 0.005737302824854851, | Test Loss: 0.040969908237457275, Test Acc: 0.0, Test Grad Norm: 0.08499281108379364 | Elapsed Time: 503.75019907951355
+Iter: 480 | Train Loss: 0.03696218878030777, Train Acc: 0.0, Train Grad Norm 0.03167635202407837, | Test Loss: 0.0496947206556797, Test Acc: 0.0, Test Grad Norm: 0.10443326085805893 | Elapsed Time: 525.6689066886902
+Patience count 1
+Iter: 500 | Train Loss: 0.038529541343450546, Train Acc: 0.0, Train Grad Norm 0.010663772001862526, | Test Loss: 0.08380928635597229, Test Acc: 0.0, Test Grad Norm: 0.398973286151886 | Elapsed Time: 547.5206573009491
+Patience count 2
+Running with c=10, seed=1
+GPU Not Enabled
+Learning rate eta = 1.0
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.18776890635490417, Train Acc: 0.0, Train Grad Norm 3.115382671356201, | Test Loss: 0.40033093094825745, Test Acc: 0.0, Test Grad Norm: 12.960153579711914 | Elapsed Time: 21.880624532699585
+Iter: 40 | Train Loss: 0.5365062355995178, Train Acc: 0.0, Train Grad Norm 3.2472145557403564, | Test Loss: 2.695439577102661, Test Acc: 0.0, Test Grad Norm: 164.62802124023438 | Elapsed Time: 43.698936462402344
+Patience count 1
+Iter: 60 | Train Loss: 0.6060196757316589, Train Acc: 0.0, Train Grad Norm 6.37487268447876, | Test Loss: 3.2429728507995605, Test Acc: 0.0, Test Grad Norm: 348.6664123535156 | Elapsed Time: 65.66740989685059
+Patience count 2
+Iter: 80 | Train Loss: 0.34137123823165894, Train Acc: 0.0, Train Grad Norm 4.285885334014893, | Test Loss: 1.334121823310852, Test Acc: 0.0, Test Grad Norm: 203.82069396972656 | Elapsed Time: 87.49456191062927
+Patience count 3
+Iter: 100 | Train Loss: 0.6478654742240906, Train Acc: 0.0, Train Grad Norm 13.882452964782715, | Test Loss: 0.9009735584259033, Test Acc: 0.0, Test Grad Norm: 68.89277648925781 | Elapsed Time: 109.40063142776489
+Patience count 4
+Iter: 120 | Train Loss: 1.210709810256958, Train Acc: 0.0, Train Grad Norm 22.07465934753418, | Test Loss: 7.2964582443237305, Test Acc: 0.0, Test Grad Norm: 1482.294677734375 | Elapsed Time: 131.2394597530365
+Patience count 5
+Iter: 140 | Train Loss: 0.43476125597953796, Train Acc: 0.0, Train Grad Norm 5.566216945648193, | Test Loss: 1.0748454332351685, Test Acc: 0.0, Test Grad Norm: 140.35487365722656 | Elapsed Time: 153.2336072921753
+Learning was stopped
+Learning rate eta = 0.5
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.5249225497245789, Train Acc: 0.0, Train Grad Norm 11.555734634399414, | Test Loss: 0.7767122387886047, Test Acc: 0.0, Test Grad Norm: 21.57756233215332 | Elapsed Time: 21.820269107818604
+Iter: 40 | Train Loss: 0.27311044931411743, Train Acc: 0.0, Train Grad Norm 4.711585998535156, | Test Loss: 0.3916384279727936, Test Acc: 0.0, Test Grad Norm: 10.116644859313965 | Elapsed Time: 43.705307483673096
+Iter: 60 | Train Loss: 0.08882727473974228, Train Acc: 0.0, Train Grad Norm 0.7916561961174011, | Test Loss: 0.21950943768024445, Test Acc: 0.0, Test Grad Norm: 5.084082126617432 | Elapsed Time: 65.6149730682373
+Iter: 80 | Train Loss: 0.04234104976058006, Train Acc: 0.0, Train Grad Norm 0.1526731252670288, | Test Loss: 0.07084783911705017, Test Acc: 0.0, Test Grad Norm: 1.004791021347046 | Elapsed Time: 87.49505925178528
+Iter: 100 | Train Loss: 0.09210991859436035, Train Acc: 0.0, Train Grad Norm 0.7927370071411133, | Test Loss: 0.15183182060718536, Test Acc: 0.0, Test Grad Norm: 3.3294997215270996 | Elapsed Time: 109.3090250492096
+Patience count 1
+Iter: 120 | Train Loss: 0.053135111927986145, Train Acc: 0.0, Train Grad Norm 0.03928783908486366, | Test Loss: 0.09376804530620575, Test Acc: 0.0, Test Grad Norm: 1.3713343143463135 | Elapsed Time: 131.1587851047516
+Patience count 2
+Iter: 140 | Train Loss: 0.0670417994260788, Train Acc: 0.0, Train Grad Norm 0.07514825463294983, | Test Loss: 0.09115701168775558, Test Acc: 0.0, Test Grad Norm: 1.0235483646392822 | Elapsed Time: 153.0866162776947
+Patience count 3
+Iter: 160 | Train Loss: 0.08712806552648544, Train Acc: 0.0, Train Grad Norm 0.26526543498039246, | Test Loss: 0.26476335525512695, Test Acc: 0.0, Test Grad Norm: 8.660743713378906 | Elapsed Time: 174.94433617591858
+Patience count 4
+Iter: 180 | Train Loss: 0.14686274528503418, Train Acc: 0.0, Train Grad Norm 0.6741955280303955, | Test Loss: 0.4566589891910553, Test Acc: 0.0, Test Grad Norm: 18.072359085083008 | Elapsed Time: 196.85362601280212
+Patience count 5
+Iter: 200 | Train Loss: 0.1193327009677887, Train Acc: 0.0, Train Grad Norm 0.5719635486602783, | Test Loss: 0.30166029930114746, Test Acc: 0.0, Test Grad Norm: 10.637606620788574 | Elapsed Time: 218.80302786827087
+Learning was stopped
+Learning rate eta = 0.25
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.6694908142089844, Train Acc: 0.0, Train Grad Norm 16.003204345703125, | Test Loss: 0.8410463929176331, Test Acc: 0.0, Test Grad Norm: 23.913326263427734 | Elapsed Time: 21.892505884170532
+Iter: 40 | Train Loss: 0.32641658186912537, Train Acc: 0.0, Train Grad Norm 7.470164775848389, | Test Loss: 0.4228595495223999, Test Acc: 0.0, Test Grad Norm: 11.224172592163086 | Elapsed Time: 43.77721571922302
+Iter: 60 | Train Loss: 0.1830826997756958, Train Acc: 0.0, Train Grad Norm 3.6815614700317383, | Test Loss: 0.19288960099220276, Test Acc: 0.0, Test Grad Norm: 4.459484100341797 | Elapsed Time: 65.79568433761597
+Iter: 80 | Train Loss: 0.08663807809352875, Train Acc: 0.0, Train Grad Norm 1.0572550296783447, | Test Loss: 0.0902308002114296, Test Acc: 0.0, Test Grad Norm: 1.343299150466919 | Elapsed Time: 87.64072966575623
+Iter: 100 | Train Loss: 0.05570375919342041, Train Acc: 0.0, Train Grad Norm 0.3052062392234802, | Test Loss: 0.06171112135052681, Test Acc: 0.0, Test Grad Norm: 0.5742087960243225 | Elapsed Time: 109.56647944450378
+Iter: 120 | Train Loss: 0.04347101226449013, Train Acc: 0.0, Train Grad Norm 0.10477428138256073, | Test Loss: 0.047834932804107666, Test Acc: 0.0, Test Grad Norm: 0.31296825408935547 | Elapsed Time: 131.4886565208435
+Iter: 140 | Train Loss: 0.04800238460302353, Train Acc: 0.0, Train Grad Norm 0.042781226336956024, | Test Loss: 0.0487121157348156, Test Acc: 0.0, Test Grad Norm: 0.10269946604967117 | Elapsed Time: 153.38645124435425
+Patience count 1
+Iter: 160 | Train Loss: 0.0707770362496376, Train Acc: 0.0, Train Grad Norm 0.17670497298240662, | Test Loss: 0.06707364320755005, Test Acc: 0.0, Test Grad Norm: 0.22913758456707 | Elapsed Time: 175.2462499141693
+Patience count 2
+Iter: 180 | Train Loss: 0.054904188960790634, Train Acc: 0.0, Train Grad Norm 0.0949503481388092, | Test Loss: 0.050045110285282135, Test Acc: 0.0, Test Grad Norm: 0.07655235379934311 | Elapsed Time: 197.26430487632751
+Patience count 3
+Iter: 200 | Train Loss: 0.06241488829255104, Train Acc: 0.0, Train Grad Norm 0.13560384511947632, | Test Loss: 0.08783188462257385, Test Acc: 0.0, Test Grad Norm: 0.9032580256462097 | Elapsed Time: 219.13741207122803
+Patience count 4
+Iter: 220 | Train Loss: 0.05338849499821663, Train Acc: 0.0, Train Grad Norm 0.11013070493936539, | Test Loss: 0.0552234947681427, Test Acc: 0.0, Test Grad Norm: 0.2489147037267685 | Elapsed Time: 241.07007551193237
+Patience count 5
+Iter: 240 | Train Loss: 0.057729922235012054, Train Acc: 0.0, Train Grad Norm 0.14288102090358734, | Test Loss: 0.05802495405077934, Test Acc: 0.0, Test Grad Norm: 0.3013879358768463 | Elapsed Time: 262.9533278942108
+Learning was stopped
+Learning rate eta = 0.125
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.7331724166870117, Train Acc: 0.0, Train Grad Norm 17.87293815612793, | Test Loss: 0.7835097312927246, Test Acc: 0.0, Test Grad Norm: 22.18562126159668 | Elapsed Time: 21.905885696411133
+Iter: 40 | Train Loss: 0.6310491561889648, Train Acc: 0.0, Train Grad Norm 15.135332107543945, | Test Loss: 0.6901511549949646, Test Acc: 0.0, Test Grad Norm: 20.01604652404785 | Elapsed Time: 43.75494408607483
+Iter: 60 | Train Loss: 0.4890134930610657, Train Acc: 0.0, Train Grad Norm 11.483576774597168, | Test Loss: 0.5373269319534302, Test Acc: 0.0, Test Grad Norm: 15.585039138793945 | Elapsed Time: 65.58301854133606
+Iter: 80 | Train Loss: 0.35683366656303406, Train Acc: 0.0, Train Grad Norm 8.206648826599121, | Test Loss: 0.3962193727493286, Test Acc: 0.0, Test Grad Norm: 11.610635757446289 | Elapsed Time: 87.59958171844482
+Iter: 100 | Train Loss: 0.24723182618618011, Train Acc: 0.0, Train Grad Norm 5.327104568481445, | Test Loss: 0.284601092338562, Test Acc: 0.0, Test Grad Norm: 7.868746757507324 | Elapsed Time: 109.45660376548767
+Iter: 120 | Train Loss: 0.17813043296337128, Train Acc: 0.0, Train Grad Norm 3.610701560974121, | Test Loss: 0.1950751692056656, Test Acc: 0.0, Test Grad Norm: 4.959378719329834 | Elapsed Time: 131.39151740074158
+Iter: 140 | Train Loss: 0.11368366330862045, Train Acc: 0.0, Train Grad Norm 1.8325295448303223, | Test Loss: 0.11186274141073227, Test Acc: 0.0, Test Grad Norm: 1.9159189462661743 | Elapsed Time: 153.33719277381897
+Iter: 160 | Train Loss: 0.0924241915345192, Train Acc: 0.0, Train Grad Norm 1.1420419216156006, | Test Loss: 0.09057196229696274, Test Acc: 0.0, Test Grad Norm: 1.2237651348114014 | Elapsed Time: 175.28639698028564
+Iter: 180 | Train Loss: 0.07589896768331528, Train Acc: 0.0, Train Grad Norm 0.7430989742279053, | Test Loss: 0.07388000935316086, Test Acc: 0.0, Test Grad Norm: 0.7519357204437256 | Elapsed Time: 197.15291094779968
+Iter: 200 | Train Loss: 0.06027354672551155, Train Acc: 0.0, Train Grad Norm 0.3069078028202057, | Test Loss: 0.060649070888757706, Test Acc: 0.0, Test Grad Norm: 0.2562621235847473 | Elapsed Time: 219.13781547546387
+Iter: 220 | Train Loss: 0.050472088158130646, Train Acc: 0.0, Train Grad Norm 0.12214299291372299, | Test Loss: 0.050884269177913666, Test Acc: 0.0, Test Grad Norm: 0.10990335792303085 | Elapsed Time: 240.98217391967773
+Iter: 240 | Train Loss: 0.049562934786081314, Train Acc: 0.0, Train Grad Norm 0.06848848611116409, | Test Loss: 0.05768800526857376, Test Acc: 0.0, Test Grad Norm: 0.25953787565231323 | Elapsed Time: 262.9265151023865
+Iter: 260 | Train Loss: 0.050614822655916214, Train Acc: 0.0, Train Grad Norm 0.08191417157649994, | Test Loss: 0.0606076642870903, Test Acc: 0.0, Test Grad Norm: 0.32076483964920044 | Elapsed Time: 284.88537216186523
+Iter: 280 | Train Loss: 0.04603558033704758, Train Acc: 0.0, Train Grad Norm 0.03039906919002533, | Test Loss: 0.04690355435013771, Test Acc: 0.0, Test Grad Norm: 0.03332025930285454 | Elapsed Time: 306.8395264148712
+Iter: 300 | Train Loss: 0.044219281524419785, Train Acc: 0.0, Train Grad Norm 0.029483847320079803, | Test Loss: 0.0514218844473362, Test Acc: 0.0, Test Grad Norm: 0.18594789505004883 | Elapsed Time: 328.71422576904297
+Iter: 320 | Train Loss: 0.048792969435453415, Train Acc: 0.0, Train Grad Norm 0.041923508048057556, | Test Loss: 0.07610827684402466, Test Acc: 0.0, Test Grad Norm: 0.6229515671730042 | Elapsed Time: 350.7257263660431
+Patience count 1
+Iter: 340 | Train Loss: 0.04599817469716072, Train Acc: 0.0, Train Grad Norm 0.04386701434850693, | Test Loss: 0.06602591276168823, Test Acc: 0.0, Test Grad Norm: 0.4689854681491852 | Elapsed Time: 372.5990478992462
+Iter: 360 | Train Loss: 0.04192998260259628, Train Acc: 0.0, Train Grad Norm 0.02268703654408455, | Test Loss: 0.05809057503938675, Test Acc: 0.0, Test Grad Norm: 0.3677732050418854 | Elapsed Time: 394.46034049987793
+Iter: 380 | Train Loss: 0.04500339552760124, Train Acc: 0.0, Train Grad Norm 0.03829692304134369, | Test Loss: 0.05392804741859436, Test Acc: 0.0, Test Grad Norm: 0.22152942419052124 | Elapsed Time: 416.4800763130188
+Patience count 1
+Iter: 400 | Train Loss: 0.04381423816084862, Train Acc: 0.0, Train Grad Norm 0.02144083008170128, | Test Loss: 0.0558316744863987, Test Acc: 0.0, Test Grad Norm: 0.25278836488723755 | Elapsed Time: 438.36044669151306
+Iter: 420 | Train Loss: 0.04335185885429382, Train Acc: 0.0, Train Grad Norm 0.020642876625061035, | Test Loss: 0.056510139256715775, Test Acc: 0.0, Test Grad Norm: 0.31031960248947144 | Elapsed Time: 460.2615964412689
+Iter: 440 | Train Loss: 0.04052707180380821, Train Acc: 0.0, Train Grad Norm 0.027747128158807755, | Test Loss: 0.05194252356886864, Test Acc: 0.0, Test Grad Norm: 0.23082566261291504 | Elapsed Time: 482.13104820251465
+Iter: 460 | Train Loss: 0.04337542876601219, Train Acc: 0.0, Train Grad Norm 0.030461497604846954, | Test Loss: 0.06586624681949615, Test Acc: 0.0, Test Grad Norm: 0.6419154405593872 | Elapsed Time: 504.19418358802795
+Patience count 1
+Iter: 480 | Train Loss: 0.04025659337639809, Train Acc: 0.0, Train Grad Norm 0.020537864416837692, | Test Loss: 0.04464617371559143, Test Acc: 0.0, Test Grad Norm: 0.15914280712604523 | Elapsed Time: 526.0531802177429
+Iter: 500 | Train Loss: 0.03676913306117058, Train Acc: 0.0, Train Grad Norm 0.01642138510942459, | Test Loss: 0.0533292330801487, Test Acc: 0.0, Test Grad Norm: 0.4725671708583832 | Elapsed Time: 547.9419844150543
+Running with c=30, seed=1
+GPU Not Enabled
+Learning rate eta = 1.0
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.18100982904434204, Train Acc: 0.0, Train Grad Norm 3.4134788513183594, | Test Loss: 0.3787510097026825, Test Acc: 0.0, Test Grad Norm: 13.418323516845703 | Elapsed Time: 21.877959728240967
+Iter: 40 | Train Loss: 0.15598279237747192, Train Acc: 0.0, Train Grad Norm 0.9044947624206543, | Test Loss: 0.24675074219703674, Test Acc: 0.0, Test Grad Norm: 3.461085557937622 | Elapsed Time: 43.73538064956665
+Iter: 60 | Train Loss: 0.20709708333015442, Train Acc: 0.0, Train Grad Norm 0.9741546511650085, | Test Loss: 0.2113155722618103, Test Acc: 0.0, Test Grad Norm: 0.9431917667388916 | Elapsed Time: 65.63146448135376
+Patience count 1
+Iter: 80 | Train Loss: 0.09931774437427521, Train Acc: 0.0, Train Grad Norm 0.24349774420261383, | Test Loss: 0.17722202837467194, Test Acc: 0.0, Test Grad Norm: 2.2256839275360107 | Elapsed Time: 87.62180471420288
+Iter: 100 | Train Loss: 0.1869809776544571, Train Acc: 0.0, Train Grad Norm 2.4375534057617188, | Test Loss: 0.8229485154151917, Test Acc: 0.0, Test Grad Norm: 42.94471740722656 | Elapsed Time: 109.51042485237122
+Patience count 1
+Iter: 120 | Train Loss: 0.23275449872016907, Train Acc: 0.0, Train Grad Norm 1.0598928928375244, | Test Loss: 0.8486893773078918, Test Acc: 0.0, Test Grad Norm: 51.798702239990234 | Elapsed Time: 131.3642656803131
+Patience count 2
+Iter: 140 | Train Loss: 0.2658373713493347, Train Acc: 0.0, Train Grad Norm 1.2565114498138428, | Test Loss: 1.0469558238983154, Test Acc: 0.0, Test Grad Norm: 64.54214477539062 | Elapsed Time: 153.29539251327515
+Patience count 3
+Iter: 160 | Train Loss: 0.7773424983024597, Train Acc: 0.0, Train Grad Norm 8.820756912231445, | Test Loss: 2.6613857746124268, Test Acc: 0.0, Test Grad Norm: 219.98358154296875 | Elapsed Time: 175.1559455394745
+Patience count 4
+Iter: 180 | Train Loss: 0.60817551612854, Train Acc: 0.0, Train Grad Norm 13.351232528686523, | Test Loss: 3.5906522274017334, Test Acc: 0.0, Test Grad Norm: 553.8828735351562 | Elapsed Time: 196.9813687801361
+Patience count 5
+Iter: 200 | Train Loss: 0.7656442523002625, Train Acc: 0.0, Train Grad Norm 8.620643615722656, | Test Loss: 2.867182970046997, Test Acc: 0.0, Test Grad Norm: 412.623291015625 | Elapsed Time: 218.93206691741943
+Learning was stopped
+Learning rate eta = 0.5
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.34771570563316345, Train Acc: 0.0, Train Grad Norm 7.674136638641357, | Test Loss: 0.623209536075592, Test Acc: 0.0, Test Grad Norm: 19.52054786682129 | Elapsed Time: 21.842340230941772
+Iter: 40 | Train Loss: 0.2390390783548355, Train Acc: 0.0, Train Grad Norm 3.5139594078063965, | Test Loss: 0.7078876495361328, Test Acc: 0.0, Test Grad Norm: 25.40349006652832 | Elapsed Time: 43.7079074382782
+Iter: 60 | Train Loss: 0.07623124122619629, Train Acc: 0.0, Train Grad Norm 0.25759145617485046, | Test Loss: 0.21965192258358002, Test Acc: 0.0, Test Grad Norm: 5.127045154571533 | Elapsed Time: 65.6158721446991
+Iter: 80 | Train Loss: 0.07190883159637451, Train Acc: 0.0, Train Grad Norm 0.13303720951080322, | Test Loss: 0.2925146222114563, Test Acc: 0.0, Test Grad Norm: 5.36950159072876 | Elapsed Time: 87.57266163825989
+Iter: 100 | Train Loss: 0.09930269420146942, Train Acc: 0.0, Train Grad Norm 0.17462646961212158, | Test Loss: 0.29934781789779663, Test Acc: 0.0, Test Grad Norm: 4.289630889892578 | Elapsed Time: 109.43143320083618
+Patience count 1
+Iter: 120 | Train Loss: 0.08106206357479095, Train Acc: 0.0, Train Grad Norm 0.22286738455295563, | Test Loss: 0.3226297199726105, Test Acc: 0.0, Test Grad Norm: 8.116252899169922 | Elapsed Time: 131.38085913658142
+Patience count 2
+Iter: 140 | Train Loss: 0.1206006109714508, Train Acc: 0.0, Train Grad Norm 0.6737331748008728, | Test Loss: 0.24058698117733002, Test Acc: 0.0, Test Grad Norm: 3.8930251598358154 | Elapsed Time: 153.23769235610962
+Patience count 3
+Iter: 160 | Train Loss: 0.0579804852604866, Train Acc: 0.0, Train Grad Norm 0.07427388429641724, | Test Loss: 0.09568268805742264, Test Acc: 0.0, Test Grad Norm: 0.5855461359024048 | Elapsed Time: 175.08607745170593
+Iter: 180 | Train Loss: 0.04841719940304756, Train Acc: 0.0, Train Grad Norm 0.07144907861948013, | Test Loss: 0.06647051125764847, Test Acc: 0.0, Test Grad Norm: 0.6487209796905518 | Elapsed Time: 197.10978150367737
+Iter: 200 | Train Loss: 0.07484101504087448, Train Acc: 0.0, Train Grad Norm 0.634598433971405, | Test Loss: 0.06717292219400406, Test Acc: 0.0, Test Grad Norm: 0.45290279388427734 | Elapsed Time: 218.96108269691467
+Patience count 1
+Iter: 220 | Train Loss: 0.1176338866353035, Train Acc: 0.0, Train Grad Norm 0.6567013263702393, | Test Loss: 0.16399206221103668, Test Acc: 0.0, Test Grad Norm: 2.429241895675659 | Elapsed Time: 240.89566040039062
+Patience count 2
+Iter: 240 | Train Loss: 0.216107577085495, Train Acc: 0.0, Train Grad Norm 1.0480211973190308, | Test Loss: 0.8486791849136353, Test Acc: 0.0, Test Grad Norm: 29.093233108520508 | Elapsed Time: 262.7468910217285
+Patience count 3
+Iter: 260 | Train Loss: 0.27702051401138306, Train Acc: 0.0, Train Grad Norm 1.9937095642089844, | Test Loss: 0.8681847453117371, Test Acc: 0.0, Test Grad Norm: 31.889970779418945 | Elapsed Time: 284.68123722076416
+Patience count 4
+Iter: 280 | Train Loss: 0.1746511161327362, Train Acc: 0.0, Train Grad Norm 1.0912744998931885, | Test Loss: 0.39714252948760986, Test Acc: 0.0, Test Grad Norm: 15.821394920349121 | Elapsed Time: 306.53147196769714
+Patience count 5
+Iter: 300 | Train Loss: 0.15409591794013977, Train Acc: 0.0, Train Grad Norm 0.7214958071708679, | Test Loss: 0.548006534576416, Test Acc: 0.0, Test Grad Norm: 31.85031509399414 | Elapsed Time: 328.4212968349457
+Learning was stopped
+Learning rate eta = 0.25
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.5932908058166504, Train Acc: 0.0, Train Grad Norm 15.486080169677734, | Test Loss: 0.7106596827507019, Test Acc: 0.0, Test Grad Norm: 24.59906578063965 | Elapsed Time: 21.928760766983032
+Iter: 40 | Train Loss: 0.40607577562332153, Train Acc: 0.0, Train Grad Norm 10.583587646484375, | Test Loss: 0.5077084302902222, Test Acc: 0.0, Test Grad Norm: 18.026325225830078 | Elapsed Time: 43.87655568122864
+Iter: 60 | Train Loss: 0.21829754114151, Train Acc: 0.0, Train Grad Norm 5.342185020446777, | Test Loss: 0.27241891622543335, Test Acc: 0.0, Test Grad Norm: 9.639898300170898 | Elapsed Time: 65.75298595428467
+Iter: 80 | Train Loss: 0.141145259141922, Train Acc: 0.0, Train Grad Norm 2.9414637088775635, | Test Loss: 0.3043191432952881, Test Acc: 0.0, Test Grad Norm: 11.859450340270996 | Elapsed Time: 87.78427243232727
+Iter: 100 | Train Loss: 0.05902521684765816, Train Acc: 0.0, Train Grad Norm 0.596147894859314, | Test Loss: 0.13445039093494415, Test Acc: 0.0, Test Grad Norm: 4.6951494216918945 | Elapsed Time: 109.64114427566528
+Iter: 120 | Train Loss: 0.03980964049696922, Train Acc: 0.0, Train Grad Norm 0.1849793791770935, | Test Loss: 0.06261781603097916, Test Acc: 0.0, Test Grad Norm: 1.5021973848342896 | Elapsed Time: 131.5112111568451
+Iter: 140 | Train Loss: 0.04534047842025757, Train Acc: 0.0, Train Grad Norm 0.2834952771663666, | Test Loss: 0.08718548715114594, Test Acc: 0.0, Test Grad Norm: 2.676654577255249 | Elapsed Time: 153.45208382606506
+Patience count 1
+Iter: 160 | Train Loss: 0.05377131700515747, Train Acc: 0.0, Train Grad Norm 0.1859276443719864, | Test Loss: 0.10294969379901886, Test Acc: 0.0, Test Grad Norm: 2.9290966987609863 | Elapsed Time: 175.30497694015503
+Patience count 2
+Iter: 180 | Train Loss: 0.05733361840248108, Train Acc: 0.0, Train Grad Norm 0.25621357560157776, | Test Loss: 0.13269834220409393, Test Acc: 0.0, Test Grad Norm: 4.260525703430176 | Elapsed Time: 197.24312496185303
+Patience count 3
+Iter: 200 | Train Loss: 0.09337669610977173, Train Acc: 0.0, Train Grad Norm 0.4520827531814575, | Test Loss: 0.2411995232105255, Test Acc: 0.0, Test Grad Norm: 8.980023384094238 | Elapsed Time: 219.19791722297668
+Patience count 4
+Iter: 220 | Train Loss: 0.08629832416772842, Train Acc: 0.0, Train Grad Norm 0.5226588249206543, | Test Loss: 0.19201473891735077, Test Acc: 0.0, Test Grad Norm: 7.211940288543701 | Elapsed Time: 241.10678505897522
+Patience count 5
+Iter: 240 | Train Loss: 0.03672961890697479, Train Acc: 0.0, Train Grad Norm 0.06131400167942047, | Test Loss: 0.05906197056174278, Test Acc: 0.0, Test Grad Norm: 1.295083999633789 | Elapsed Time: 262.96682357788086
+Learning was stopped
+Learning rate eta = 0.125
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.8391680121421814, Train Acc: 0.0, Train Grad Norm 20.549314498901367, | Test Loss: 0.9490790367126465, Test Acc: 0.0, Test Grad Norm: 27.487518310546875 | Elapsed Time: 22.017804861068726
+Iter: 40 | Train Loss: 0.6411802172660828, Train Acc: 0.0, Train Grad Norm 15.389873504638672, | Test Loss: 0.7649394273757935, Test Acc: 0.0, Test Grad Norm: 22.606433868408203 | Elapsed Time: 43.85860991477966
+Iter: 60 | Train Loss: 0.43745535612106323, Train Acc: 0.0, Train Grad Norm 9.952107429504395, | Test Loss: 0.5323111414909363, Test Acc: 0.0, Test Grad Norm: 14.838916778564453 | Elapsed Time: 65.79250121116638
+Iter: 80 | Train Loss: 0.3251802325248718, Train Acc: 0.0, Train Grad Norm 7.054315567016602, | Test Loss: 0.4225590229034424, Test Acc: 0.0, Test Grad Norm: 11.579849243164062 | Elapsed Time: 87.73448920249939
+Iter: 100 | Train Loss: 0.24358126521110535, Train Acc: 0.0, Train Grad Norm 4.9240264892578125, | Test Loss: 0.31131720542907715, Test Acc: 0.0, Test Grad Norm: 8.061920166015625 | Elapsed Time: 109.65237212181091
+Iter: 120 | Train Loss: 0.1706695854663849, Train Acc: 0.0, Train Grad Norm 3.2424347400665283, | Test Loss: 0.22359426319599152, Test Acc: 0.0, Test Grad Norm: 5.583858489990234 | Elapsed Time: 131.4872691631317
+Iter: 140 | Train Loss: 0.10929584503173828, Train Acc: 0.0, Train Grad Norm 1.715168833732605, | Test Loss: 0.17665493488311768, Test Acc: 0.0, Test Grad Norm: 4.208807468414307 | Elapsed Time: 153.42847871780396
+Iter: 160 | Train Loss: 0.08488278836011887, Train Acc: 0.0, Train Grad Norm 1.011956810951233, | Test Loss: 0.17954830825328827, Test Acc: 0.0, Test Grad Norm: 4.039821624755859 | Elapsed Time: 175.37388968467712
+Iter: 180 | Train Loss: 0.07468806207180023, Train Acc: 0.0, Train Grad Norm 0.6985724568367004, | Test Loss: 0.15854059159755707, Test Acc: 0.0, Test Grad Norm: 3.466768980026245 | Elapsed Time: 197.28090047836304
+Iter: 200 | Train Loss: 0.057573702186346054, Train Acc: 0.0, Train Grad Norm 0.3307003676891327, | Test Loss: 0.15066610276699066, Test Acc: 0.0, Test Grad Norm: 3.1302947998046875 | Elapsed Time: 219.12737679481506
+Iter: 220 | Train Loss: 0.05347302928566933, Train Acc: 0.0, Train Grad Norm 0.13627539575099945, | Test Loss: 0.13065487146377563, Test Acc: 0.0, Test Grad Norm: 2.2182319164276123 | Elapsed Time: 241.08939814567566
+Iter: 240 | Train Loss: 0.049322742968797684, Train Acc: 0.0, Train Grad Norm 0.07091140747070312, | Test Loss: 0.1428336352109909, Test Acc: 0.0, Test Grad Norm: 2.3322994709014893 | Elapsed Time: 262.9942219257355
+Iter: 260 | Train Loss: 0.04934415966272354, Train Acc: 0.0, Train Grad Norm 0.03952643275260925, | Test Loss: 0.1429021954536438, Test Acc: 0.0, Test Grad Norm: 2.171997308731079 | Elapsed Time: 284.8513979911804
+Iter: 280 | Train Loss: 0.0501246303319931, Train Acc: 0.0, Train Grad Norm 0.06866602599620819, | Test Loss: 0.17068156599998474, Test Acc: 0.0, Test Grad Norm: 3.1642239093780518 | Elapsed Time: 306.8577034473419
+Iter: 300 | Train Loss: 0.04210740327835083, Train Acc: 0.0, Train Grad Norm 0.026325691491365433, | Test Loss: 0.11599338054656982, Test Acc: 0.0, Test Grad Norm: 1.6630949974060059 | Elapsed Time: 328.72831439971924
+Iter: 320 | Train Loss: 0.0398239828646183, Train Acc: 0.0, Train Grad Norm 0.020822839811444283, | Test Loss: 0.07606449723243713, Test Acc: 0.0, Test Grad Norm: 0.6801888346672058 | Elapsed Time: 350.67787313461304
+Iter: 340 | Train Loss: 0.03993500769138336, Train Acc: 0.0, Train Grad Norm 0.01696513034403324, | Test Loss: 0.05511268600821495, Test Acc: 0.0, Test Grad Norm: 0.32563918828964233 | Elapsed Time: 372.6319875717163
+Iter: 360 | Train Loss: 0.04176789149641991, Train Acc: 0.0, Train Grad Norm 0.027066310867667198, | Test Loss: 0.057961806654930115, Test Acc: 0.0, Test Grad Norm: 0.39179685711860657 | Elapsed Time: 394.62327766418457
+Iter: 380 | Train Loss: 0.05012406408786774, Train Acc: 0.0, Train Grad Norm 0.03216822072863579, | Test Loss: 0.08649790287017822, Test Acc: 0.0, Test Grad Norm: 0.7517317533493042 | Elapsed Time: 416.4666373729706
+Patience count 1
+Iter: 400 | Train Loss: 0.04725129157304764, Train Acc: 0.0, Train Grad Norm 0.0320175439119339, | Test Loss: 0.09294664114713669, Test Acc: 0.0, Test Grad Norm: 0.6931251883506775 | Elapsed Time: 438.54527854919434
+Patience count 2
+Iter: 420 | Train Loss: 0.04709566384553909, Train Acc: 0.0, Train Grad Norm 0.03913727030158043, | Test Loss: 0.09863083809614182, Test Acc: 0.0, Test Grad Norm: 1.3068417310714722 | Elapsed Time: 460.56254482269287
+Patience count 3
+Iter: 440 | Train Loss: 0.04385828226804733, Train Acc: 0.0, Train Grad Norm 0.06107385456562042, | Test Loss: 0.08434329926967621, Test Acc: 0.0, Test Grad Norm: 0.7565250396728516 | Elapsed Time: 482.4967312812805
+Patience count 4
+Iter: 460 | Train Loss: 0.045480597764253616, Train Acc: 0.0, Train Grad Norm 0.07545218616724014, | Test Loss: 0.110169917345047, Test Acc: 0.0, Test Grad Norm: 1.188680648803711 | Elapsed Time: 504.4508526325226
+Patience count 5
+Iter: 480 | Train Loss: 0.04683118686079979, Train Acc: 0.0, Train Grad Norm 0.08936431258916855, | Test Loss: 0.10398857295513153, Test Acc: 0.0, Test Grad Norm: 1.077663779258728 | Elapsed Time: 526.409289598465
+Learning was stopped
+Learning rate eta = 0.0625
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.9129700064659119, Train Acc: 0.0, Train Grad Norm 23.136329650878906, | Test Loss: 1.0859326124191284, Test Acc: 0.0, Test Grad Norm: 33.465518951416016 | Elapsed Time: 21.824702739715576
+Iter: 40 | Train Loss: 0.7719141840934753, Train Acc: 0.0, Train Grad Norm 19.383773803710938, | Test Loss: 0.9357601404190063, Test Acc: 0.0, Test Grad Norm: 28.614234924316406 | Elapsed Time: 43.74572563171387
+Iter: 60 | Train Loss: 0.657925546169281, Train Acc: 0.0, Train Grad Norm 16.381858825683594, | Test Loss: 0.7834625244140625, Test Acc: 0.0, Test Grad Norm: 23.8187313079834 | Elapsed Time: 65.69717121124268
+Iter: 80 | Train Loss: 0.5251865386962891, Train Acc: 0.0, Train Grad Norm 12.844764709472656, | Test Loss: 0.6323506832122803, Test Acc: 0.0, Test Grad Norm: 19.168209075927734 | Elapsed Time: 87.5691545009613
+Iter: 100 | Train Loss: 0.4303338825702667, Train Acc: 0.0, Train Grad Norm 10.416515350341797, | Test Loss: 0.5213190913200378, Test Acc: 0.0, Test Grad Norm: 15.758044242858887 | Elapsed Time: 109.48764300346375
+Iter: 120 | Train Loss: 0.35114824771881104, Train Acc: 0.0, Train Grad Norm 8.20248794555664, | Test Loss: 0.4247230887413025, Test Acc: 0.0, Test Grad Norm: 12.787750244140625 | Elapsed Time: 131.43206024169922
+Iter: 140 | Train Loss: 0.28535860776901245, Train Acc: 0.0, Train Grad Norm 6.394205093383789, | Test Loss: 0.3239152431488037, Test Acc: 0.0, Test Grad Norm: 9.209912300109863 | Elapsed Time: 153.3752202987671
+Iter: 160 | Train Loss: 0.21698221564292908, Train Acc: 0.0, Train Grad Norm 4.459946632385254, | Test Loss: 0.24242794513702393, Test Acc: 0.0, Test Grad Norm: 6.506420135498047 | Elapsed Time: 175.24325037002563
+Iter: 180 | Train Loss: 0.17795006930828094, Train Acc: 0.0, Train Grad Norm 3.272280693054199, | Test Loss: 0.1815229058265686, Test Acc: 0.0, Test Grad Norm: 4.2388505935668945 | Elapsed Time: 197.29983496665955
+Iter: 200 | Train Loss: 0.1361243724822998, Train Acc: 0.0, Train Grad Norm 2.2227351665496826, | Test Loss: 0.1365693360567093, Test Acc: 0.0, Test Grad Norm: 2.856804847717285 | Elapsed Time: 219.18943810462952
+Iter: 220 | Train Loss: 0.10352982580661774, Train Acc: 0.0, Train Grad Norm 1.4431805610656738, | Test Loss: 0.10038228332996368, Test Acc: 0.0, Test Grad Norm: 1.7775423526763916 | Elapsed Time: 241.13665676116943
+Iter: 240 | Train Loss: 0.08561939746141434, Train Acc: 0.0, Train Grad Norm 1.006351351737976, | Test Loss: 0.08048190176486969, Test Acc: 0.0, Test Grad Norm: 1.1985746622085571 | Elapsed Time: 263.0365664958954
+Iter: 260 | Train Loss: 0.07555782049894333, Train Acc: 0.0, Train Grad Norm 0.6694965958595276, | Test Loss: 0.06630048155784607, Test Acc: 0.0, Test Grad Norm: 0.6671807765960693 | Elapsed Time: 285.0227642059326
+Iter: 280 | Train Loss: 0.06628820300102234, Train Acc: 0.0, Train Grad Norm 0.49828118085861206, | Test Loss: 0.05655200779438019, Test Acc: 0.0, Test Grad Norm: 0.3785519003868103 | Elapsed Time: 306.90809059143066
+Iter: 300 | Train Loss: 0.05970163643360138, Train Acc: 0.0, Train Grad Norm 0.3461441099643707, | Test Loss: 0.0542365126311779, Test Acc: 0.0, Test Grad Norm: 0.20071402192115784 | Elapsed Time: 328.85990285873413
+Iter: 320 | Train Loss: 0.05407942086458206, Train Acc: 0.0, Train Grad Norm 0.2176765501499176, | Test Loss: 0.053328245878219604, Test Acc: 0.0, Test Grad Norm: 0.12495027482509613 | Elapsed Time: 350.82447624206543
+Iter: 340 | Train Loss: 0.05164149031043053, Train Acc: 0.0, Train Grad Norm 0.1499592363834381, | Test Loss: 0.05661461874842644, Test Acc: 0.0, Test Grad Norm: 0.13222111761569977 | Elapsed Time: 372.7426164150238
+Iter: 360 | Train Loss: 0.04709884524345398, Train Acc: 0.0, Train Grad Norm 0.08509255945682526, | Test Loss: 0.04800160974264145, Test Acc: 0.0, Test Grad Norm: 0.06695066392421722 | Elapsed Time: 394.6073408126831
+Iter: 380 | Train Loss: 0.04671567305922508, Train Acc: 0.0, Train Grad Norm 0.03544072434306145, | Test Loss: 0.04517548158764839, Test Acc: 0.0, Test Grad Norm: 0.032336387783288956 | Elapsed Time: 416.5780062675476
+Iter: 400 | Train Loss: 0.04511810839176178, Train Acc: 0.0, Train Grad Norm 0.04614746570587158, | Test Loss: 0.044849563390016556, Test Acc: 0.0, Test Grad Norm: 0.04007222503423691 | Elapsed Time: 438.4526700973511
+Iter: 420 | Train Loss: 0.043047916144132614, Train Acc: 0.0, Train Grad Norm 0.0180951114743948, | Test Loss: 0.04289069399237633, Test Acc: 0.0, Test Grad Norm: 0.041337594389915466 | Elapsed Time: 460.3441753387451
+Iter: 440 | Train Loss: 0.04314955696463585, Train Acc: 0.0, Train Grad Norm 0.01842167042195797, | Test Loss: 0.045481860637664795, Test Acc: 0.0, Test Grad Norm: 0.07633413374423981 | Elapsed Time: 482.368656873703
+Iter: 460 | Train Loss: 0.043953217566013336, Train Acc: 0.0, Train Grad Norm 0.014228268526494503, | Test Loss: 0.05437023192644119, Test Acc: 0.0, Test Grad Norm: 0.24102599918842316 | Elapsed Time: 504.21225476264954
+Iter: 480 | Train Loss: 0.04274590685963631, Train Acc: 0.0, Train Grad Norm 0.011928962543606758, | Test Loss: 0.06425907462835312, Test Acc: 0.0, Test Grad Norm: 0.4697056710720062 | Elapsed Time: 526.1471261978149
+Iter: 500 | Train Loss: 0.044227976351976395, Train Acc: 0.0, Train Grad Norm 0.02936098724603653, | Test Loss: 0.07995840162038803, Test Acc: 0.0, Test Grad Norm: 0.8599415421485901 | Elapsed Time: 548.120578289032
+Running with c=100, seed=1
+GPU Not Enabled
+Learning rate eta = 1.0
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.3378430902957916, Train Acc: 0.0, Train Grad Norm 3.9054512977600098, | Test Loss: 0.5985851883888245, Test Acc: 0.0, Test Grad Norm: 29.980138778686523 | Elapsed Time: 21.750758409500122
+Iter: 40 | Train Loss: 0.17784230411052704, Train Acc: 0.0, Train Grad Norm 2.679719924926758, | Test Loss: 0.15911293029785156, Test Acc: 0.0, Test Grad Norm: 1.4870188236236572 | Elapsed Time: 43.474340200424194
+Iter: 60 | Train Loss: 0.1625814437866211, Train Acc: 0.0, Train Grad Norm 1.05966317653656, | Test Loss: 0.15843208134174347, Test Acc: 0.0, Test Grad Norm: 1.1663410663604736 | Elapsed Time: 65.34310722351074
+Iter: 80 | Train Loss: 0.28165847063064575, Train Acc: 0.0, Train Grad Norm 3.2348780632019043, | Test Loss: 0.3030768036842346, Test Acc: 0.0, Test Grad Norm: 4.823203086853027 | Elapsed Time: 87.05494475364685
+Patience count 1
+Iter: 100 | Train Loss: 0.18733441829681396, Train Acc: 0.0, Train Grad Norm 0.8383660316467285, | Test Loss: 0.1846887767314911, Test Acc: 0.0, Test Grad Norm: 2.0124118328094482 | Elapsed Time: 108.86169934272766
+Patience count 2
+Iter: 120 | Train Loss: 0.2532939612865448, Train Acc: 0.0, Train Grad Norm 6.043033123016357, | Test Loss: 0.22447475790977478, Test Acc: 0.0, Test Grad Norm: 5.790869235992432 | Elapsed Time: 130.58467197418213
+Patience count 3
+Iter: 140 | Train Loss: 0.3179049789905548, Train Acc: 0.0, Train Grad Norm 2.0643718242645264, | Test Loss: 0.28742241859436035, Test Acc: 0.0, Test Grad Norm: 2.364117383956909 | Elapsed Time: 152.4407570362091
+Patience count 4
+Iter: 160 | Train Loss: 0.45555973052978516, Train Acc: 0.0, Train Grad Norm 4.03753137588501, | Test Loss: 0.7996469140052795, Test Acc: 0.0, Test Grad Norm: 55.665592193603516 | Elapsed Time: 174.16824579238892
+Patience count 5
+Iter: 180 | Train Loss: 0.5343650579452515, Train Acc: 0.0, Train Grad Norm 3.601802349090576, | Test Loss: 0.7520156502723694, Test Acc: 0.0, Test Grad Norm: 56.12758255004883 | Elapsed Time: 195.97303891181946
+Learning was stopped
+Learning rate eta = 0.5
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.4919731616973877, Train Acc: 0.0, Train Grad Norm 11.099994659423828, | Test Loss: 0.5204365253448486, Test Acc: 0.0, Test Grad Norm: 13.171133041381836 | Elapsed Time: 21.853723764419556
+Iter: 40 | Train Loss: 0.18773706257343292, Train Acc: 0.0, Train Grad Norm 3.4072885513305664, | Test Loss: 0.19522196054458618, Test Acc: 0.0, Test Grad Norm: 3.7777912616729736 | Elapsed Time: 43.61827898025513
+Iter: 60 | Train Loss: 0.09149830788373947, Train Acc: 0.0, Train Grad Norm 1.1475821733474731, | Test Loss: 0.08899691700935364, Test Acc: 0.0, Test Grad Norm: 1.0278475284576416 | Elapsed Time: 65.41572737693787
+Iter: 80 | Train Loss: 0.05452008917927742, Train Acc: 0.0, Train Grad Norm 0.053372498601675034, | Test Loss: 0.058683060109615326, Test Acc: 0.0, Test Grad Norm: 0.09676121920347214 | Elapsed Time: 87.36414766311646
+Iter: 100 | Train Loss: 0.06390220671892166, Train Acc: 0.0, Train Grad Norm 0.11242976039648056, | Test Loss: 0.16187244653701782, Test Acc: 0.0, Test Grad Norm: 1.6428529024124146 | Elapsed Time: 109.15892958641052
+Patience count 1
+Iter: 120 | Train Loss: 0.14404332637786865, Train Acc: 0.0, Train Grad Norm 0.6525472402572632, | Test Loss: 0.28266391158103943, Test Acc: 0.0, Test Grad Norm: 3.7475626468658447 | Elapsed Time: 131.021723985672
+Patience count 2
+Iter: 140 | Train Loss: 0.1090698316693306, Train Acc: 0.0, Train Grad Norm 0.3367423713207245, | Test Loss: 0.30043378472328186, Test Acc: 0.0, Test Grad Norm: 5.008145332336426 | Elapsed Time: 152.9305238723755
+Patience count 3
+Iter: 160 | Train Loss: 0.1939511001110077, Train Acc: 0.0, Train Grad Norm 1.0029757022857666, | Test Loss: 0.5704169869422913, Test Acc: 0.0, Test Grad Norm: 10.522221565246582 | Elapsed Time: 174.72624969482422
+Patience count 4
+Iter: 180 | Train Loss: 0.13593219220638275, Train Acc: 0.0, Train Grad Norm 0.5994656682014465, | Test Loss: 0.4257591962814331, Test Acc: 0.0, Test Grad Norm: 6.538625240325928 | Elapsed Time: 196.59439039230347
+Patience count 5
+Iter: 200 | Train Loss: 0.05410904809832573, Train Acc: 0.0, Train Grad Norm 0.1978379786014557, | Test Loss: 0.09591493755578995, Test Acc: 0.0, Test Grad Norm: 1.2193998098373413 | Elapsed Time: 218.48115634918213
+Learning was stopped
+Learning rate eta = 0.25
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.6037701368331909, Train Acc: 0.0, Train Grad Norm 14.993756294250488, | Test Loss: 0.7274489998817444, Test Acc: 0.0, Test Grad Norm: 22.83229637145996 | Elapsed Time: 21.891626834869385
+Iter: 40 | Train Loss: 0.40126198530197144, Train Acc: 0.0, Train Grad Norm 9.289803504943848, | Test Loss: 0.4365982413291931, Test Acc: 0.0, Test Grad Norm: 12.608343124389648 | Elapsed Time: 43.675899505615234
+Iter: 60 | Train Loss: 0.22618107497692108, Train Acc: 0.0, Train Grad Norm 4.452086448669434, | Test Loss: 0.23789037764072418, Test Acc: 0.0, Test Grad Norm: 6.044575214385986 | Elapsed Time: 65.50353527069092
+Iter: 80 | Train Loss: 0.1391918659210205, Train Acc: 0.0, Train Grad Norm 2.309474468231201, | Test Loss: 0.16551411151885986, Test Acc: 0.0, Test Grad Norm: 4.568732261657715 | Elapsed Time: 87.4124047756195
+Iter: 100 | Train Loss: 0.0795404240489006, Train Acc: 0.0, Train Grad Norm 0.937833309173584, | Test Loss: 0.09998556971549988, Test Acc: 0.0, Test Grad Norm: 2.2819817066192627 | Elapsed Time: 109.22764325141907
+Iter: 120 | Train Loss: 0.06221052259206772, Train Acc: 0.0, Train Grad Norm 0.48255807161331177, | Test Loss: 0.08687969297170639, Test Acc: 0.0, Test Grad Norm: 1.6601197719573975 | Elapsed Time: 131.02602076530457
+Iter: 140 | Train Loss: 0.058045659214258194, Train Acc: 0.0, Train Grad Norm 0.2793574333190918, | Test Loss: 0.10535391420125961, Test Acc: 0.0, Test Grad Norm: 2.238687515258789 | Elapsed Time: 152.96068930625916
+Iter: 160 | Train Loss: 0.058257196098566055, Train Acc: 0.0, Train Grad Norm 0.15324360132217407, | Test Loss: 0.08434046059846878, Test Acc: 0.0, Test Grad Norm: 1.5867438316345215 | Elapsed Time: 174.7853307723999
+Iter: 180 | Train Loss: 0.07946467399597168, Train Acc: 0.0, Train Grad Norm 0.2657662630081177, | Test Loss: 0.17524994909763336, Test Acc: 0.0, Test Grad Norm: 5.430394649505615 | Elapsed Time: 196.65894269943237
+Patience count 1
+Iter: 200 | Train Loss: 0.09560937434434891, Train Acc: 0.0, Train Grad Norm 0.43717390298843384, | Test Loss: 0.3157416582107544, Test Acc: 0.0, Test Grad Norm: 10.947711944580078 | Elapsed Time: 218.57568430900574
+Patience count 2
+Iter: 220 | Train Loss: 0.11235103011131287, Train Acc: 0.0, Train Grad Norm 0.3454277217388153, | Test Loss: 0.41034653782844543, Test Acc: 0.0, Test Grad Norm: 12.882390022277832 | Elapsed Time: 240.42447423934937
+Patience count 3
+Iter: 240 | Train Loss: 0.15238429605960846, Train Acc: 0.0, Train Grad Norm 0.7228511571884155, | Test Loss: 0.636013388633728, Test Acc: 0.0, Test Grad Norm: 26.371379852294922 | Elapsed Time: 262.2149386405945
+Patience count 4
+Iter: 260 | Train Loss: 0.19861167669296265, Train Acc: 0.0, Train Grad Norm 1.094791293144226, | Test Loss: 1.0022573471069336, Test Acc: 0.0, Test Grad Norm: 45.57810592651367 | Elapsed Time: 284.133065700531
+Patience count 5
+Iter: 280 | Train Loss: 0.11486203223466873, Train Acc: 0.0, Train Grad Norm 0.4563482105731964, | Test Loss: 0.4752804934978485, Test Acc: 0.0, Test Grad Norm: 18.812969207763672 | Elapsed Time: 306.0176320075989
+Learning was stopped
+Learning rate eta = 0.125
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.816386878490448, Train Acc: 0.0, Train Grad Norm 20.11720848083496, | Test Loss: 0.9176385998725891, Test Acc: 0.0, Test Grad Norm: 26.647029876708984 | Elapsed Time: 21.778239488601685
+Iter: 40 | Train Loss: 0.6520543098449707, Train Acc: 0.0, Train Grad Norm 15.651372909545898, | Test Loss: 0.7463458776473999, Test Acc: 0.0, Test Grad Norm: 20.912187576293945 | Elapsed Time: 43.617645502090454
+Iter: 60 | Train Loss: 0.5108823776245117, Train Acc: 0.0, Train Grad Norm 12.196691513061523, | Test Loss: 0.5834680795669556, Test Acc: 0.0, Test Grad Norm: 16.5268497467041 | Elapsed Time: 65.51089763641357
+Iter: 80 | Train Loss: 0.3668699264526367, Train Acc: 0.0, Train Grad Norm 8.567122459411621, | Test Loss: 0.39771026372909546, Test Acc: 0.0, Test Grad Norm: 10.990476608276367 | Elapsed Time: 87.37448859214783
+Iter: 100 | Train Loss: 0.24956539273262024, Train Acc: 0.0, Train Grad Norm 5.554462909698486, | Test Loss: 0.2661089301109314, Test Acc: 0.0, Test Grad Norm: 6.998098373413086 | Elapsed Time: 109.16873931884766
+Iter: 120 | Train Loss: 0.17889738082885742, Train Acc: 0.0, Train Grad Norm 3.579601764678955, | Test Loss: 0.1887061446905136, Test Acc: 0.0, Test Grad Norm: 4.406930446624756 | Elapsed Time: 131.11246943473816
+Iter: 140 | Train Loss: 0.14483267068862915, Train Acc: 0.0, Train Grad Norm 2.6005191802978516, | Test Loss: 0.16372926533222198, Test Acc: 0.0, Test Grad Norm: 3.7155497074127197 | Elapsed Time: 152.916668176651
+Iter: 160 | Train Loss: 0.08903156965970993, Train Acc: 0.0, Train Grad Norm 1.1496970653533936, | Test Loss: 0.10970187932252884, Test Acc: 0.0, Test Grad Norm: 2.1642394065856934 | Elapsed Time: 174.73058581352234
+Iter: 180 | Train Loss: 0.07364507764577866, Train Acc: 0.0, Train Grad Norm 0.7204146981239319, | Test Loss: 0.09333162009716034, Test Acc: 0.0, Test Grad Norm: 1.6012649536132812 | Elapsed Time: 196.61294531822205
+Iter: 200 | Train Loss: 0.05401575192809105, Train Acc: 0.0, Train Grad Norm 0.3255702257156372, | Test Loss: 0.056737907230854034, Test Acc: 0.0, Test Grad Norm: 0.46341925859451294 | Elapsed Time: 218.48221373558044
+Iter: 220 | Train Loss: 0.049904774874448776, Train Acc: 0.0, Train Grad Norm 0.24469706416130066, | Test Loss: 0.06685910373926163, Test Acc: 0.0, Test Grad Norm: 0.8733365535736084 | Elapsed Time: 240.2804684638977
+Iter: 240 | Train Loss: 0.04300258308649063, Train Acc: 0.0, Train Grad Norm 0.07448282837867737, | Test Loss: 0.06451135128736496, Test Acc: 0.0, Test Grad Norm: 0.6561628580093384 | Elapsed Time: 262.2190811634064
+Iter: 260 | Train Loss: 0.041128285229206085, Train Acc: 0.0, Train Grad Norm 0.064441978931427, | Test Loss: 0.059178996831178665, Test Acc: 0.0, Test Grad Norm: 0.5587184429168701 | Elapsed Time: 284.00358843803406
+Iter: 280 | Train Loss: 0.040504347532987595, Train Acc: 0.0, Train Grad Norm 0.03579409047961235, | Test Loss: 0.05364489555358887, Test Acc: 0.0, Test Grad Norm: 0.3591592311859131 | Elapsed Time: 305.81784224510193
+Iter: 300 | Train Loss: 0.041192010045051575, Train Acc: 0.0, Train Grad Norm 0.020887117832899094, | Test Loss: 0.043153729289770126, Test Acc: 0.0, Test Grad Norm: 0.048172563314437866 | Elapsed Time: 327.6000521183014
+Iter: 320 | Train Loss: 0.03842490538954735, Train Acc: 0.0, Train Grad Norm 0.01445776503533125, | Test Loss: 0.041563183069229126, Test Acc: 0.0, Test Grad Norm: 0.07318820804357529 | Elapsed Time: 349.4680869579315
+Iter: 340 | Train Loss: 0.0399947352707386, Train Acc: 0.0, Train Grad Norm 0.020760200917720795, | Test Loss: 0.05115333944559097, Test Acc: 0.0, Test Grad Norm: 0.24355152249336243 | Elapsed Time: 371.281943321228
+Iter: 360 | Train Loss: 0.039327822625637054, Train Acc: 0.0, Train Grad Norm 0.026729943230748177, | Test Loss: 0.0403028205037117, Test Acc: 0.0, Test Grad Norm: 0.04355053976178169 | Elapsed Time: 393.08558225631714
+Iter: 380 | Train Loss: 0.03723854571580887, Train Acc: 0.0, Train Grad Norm 0.012755269184708595, | Test Loss: 0.04735315963625908, Test Acc: 0.0, Test Grad Norm: 0.22474457323551178 | Elapsed Time: 415.02487540245056
+Iter: 400 | Train Loss: 0.03950226306915283, Train Acc: 0.0, Train Grad Norm 0.019714482128620148, | Test Loss: 0.039714962244033813, Test Acc: 0.0, Test Grad Norm: 0.028399983420968056 | Elapsed Time: 436.8109276294708
+Patience count 1
+Iter: 420 | Train Loss: 0.03950078412890434, Train Acc: 0.0, Train Grad Norm 0.02520843781530857, | Test Loss: 0.038574859499931335, Test Acc: 0.0, Test Grad Norm: 0.014579270035028458 | Elapsed Time: 458.6312870979309
+Patience count 2
+Iter: 440 | Train Loss: 0.040190961211919785, Train Acc: 0.0, Train Grad Norm 0.016494546085596085, | Test Loss: 0.04552287980914116, Test Acc: 0.0, Test Grad Norm: 0.12071909755468369 | Elapsed Time: 480.53522777557373
+Patience count 3
+Iter: 460 | Train Loss: 0.04114243760704994, Train Acc: 0.0, Train Grad Norm 0.041427455842494965, | Test Loss: 0.04464182257652283, Test Acc: 0.0, Test Grad Norm: 0.15781709551811218 | Elapsed Time: 502.37398862838745
+Patience count 4
+Iter: 480 | Train Loss: 0.04088959842920303, Train Acc: 0.0, Train Grad Norm 0.01800573244690895, | Test Loss: 0.04126664996147156, Test Acc: 0.0, Test Grad Norm: 0.04110083729028702 | Elapsed Time: 524.1804428100586
+Patience count 5
+Iter: 500 | Train Loss: 0.038752418011426926, Train Acc: 0.0, Train Grad Norm 0.01741638407111168, | Test Loss: 0.04010498523712158, Test Acc: 0.0, Test Grad Norm: 0.07843402028083801 | Elapsed Time: 546.1150045394897
+Learning was stopped
+Learning rate eta = 0.0625
+The size of local train datasets:  [1652, 1652, 1651, 1651, 1651, 1651, 1651, 1651, 1651, 1651]
+Shuffling 16520 1.2 -DP local randomizers results is (eps,  1e-08 )-DP in the shuffle model for eps between 0.06864230678113897 and 0.0693993910471074
+The final epsilon, delta is ( 14.24881364270569 , 1e-05 )
+Iter: 0 | Train Loss: 1.062459945678711, Train Acc: 0.0, Train Grad Norm 26.872825622558594, | Test Loss: 1.2209653854370117, Test Acc: 0.0, Test Grad Norm: 37.23039245605469
+Iter: 20 | Train Loss: 0.887425422668457, Train Acc: 0.0, Train Grad Norm 22.164724349975586, | Test Loss: 1.0206117630004883, Test Acc: 0.0, Test Grad Norm: 30.253496170043945 | Elapsed Time: 21.779047966003418
+Iter: 40 | Train Loss: 0.7088278532028198, Train Acc: 0.0, Train Grad Norm 17.441648483276367, | Test Loss: 0.8278430104255676, Test Acc: 0.0, Test Grad Norm: 24.36820411682129 | Elapsed Time: 43.62986755371094
+Iter: 60 | Train Loss: 0.5417273640632629, Train Acc: 0.0, Train Grad Norm 12.949590682983398, | Test Loss: 0.645014762878418, Test Acc: 0.0, Test Grad Norm: 18.445945739746094 | Elapsed Time: 65.43709135055542
+Iter: 80 | Train Loss: 0.41487112641334534, Train Acc: 0.0, Train Grad Norm 9.66507339477539, | Test Loss: 0.4990554749965668, Test Acc: 0.0, Test Grad Norm: 13.96876335144043 | Elapsed Time: 87.39129257202148
+Iter: 100 | Train Loss: 0.3048713803291321, Train Acc: 0.0, Train Grad Norm 6.781975269317627, | Test Loss: 0.37337201833724976, Test Acc: 0.0, Test Grad Norm: 10.005698204040527 | Elapsed Time: 109.22455167770386
+Iter: 120 | Train Loss: 0.2517617642879486, Train Acc: 0.0, Train Grad Norm 5.426599025726318, | Test Loss: 0.32049328088760376, Test Acc: 0.0, Test Grad Norm: 8.508979797363281 | Elapsed Time: 131.06197452545166
+Iter: 140 | Train Loss: 0.19612787663936615, Train Acc: 0.0, Train Grad Norm 3.9232237339019775, | Test Loss: 0.2543315589427948, Test Acc: 0.0, Test Grad Norm: 6.397871971130371 | Elapsed Time: 153.0560064315796
+Iter: 160 | Train Loss: 0.14581717550754547, Train Acc: 0.0, Train Grad Norm 2.5746910572052, | Test Loss: 0.19950638711452484, Test Acc: 0.0, Test Grad Norm: 4.642988681793213 | Elapsed Time: 175.07228994369507
+Iter: 180 | Train Loss: 0.11130347847938538, Train Acc: 0.0, Train Grad Norm 1.628472089767456, | Test Loss: 0.14436572790145874, Test Acc: 0.0, Test Grad Norm: 2.9466938972473145 | Elapsed Time: 197.00097274780273
+Iter: 200 | Train Loss: 0.09580790996551514, Train Acc: 0.0, Train Grad Norm 1.165839672088623, | Test Loss: 0.13371466100215912, Test Acc: 0.0, Test Grad Norm: 2.5136325359344482 | Elapsed Time: 219.15801453590393
+Iter: 220 | Train Loss: 0.0843721255660057, Train Acc: 0.0, Train Grad Norm 0.8531761169433594, | Test Loss: 0.1294005662202835, Test Acc: 0.0, Test Grad Norm: 2.269282341003418 | Elapsed Time: 241.2418463230133
+Iter: 240 | Train Loss: 0.0711706280708313, Train Acc: 0.0, Train Grad Norm 0.5716753005981445, | Test Loss: 0.1120179146528244, Test Acc: 0.0, Test Grad Norm: 1.7228920459747314 | Elapsed Time: 263.1452262401581
+Iter: 260 | Train Loss: 0.058974988758563995, Train Acc: 0.0, Train Grad Norm 0.32148978114128113, | Test Loss: 0.09423008561134338, Test Acc: 0.0, Test Grad Norm: 1.2043368816375732 | Elapsed Time: 285.1214680671692
+Iter: 280 | Train Loss: 0.05076150968670845, Train Acc: 0.0, Train Grad Norm 0.17957346141338348, | Test Loss: 0.08088921010494232, Test Acc: 0.0, Test Grad Norm: 0.886839747428894 | Elapsed Time: 306.95922589302063
+Iter: 300 | Train Loss: 0.04938355088233948, Train Acc: 0.0, Train Grad Norm 0.11426084488630295, | Test Loss: 0.08191176503896713, Test Acc: 0.0, Test Grad Norm: 0.7991235256195068 | Elapsed Time: 328.8210771083832
+Iter: 320 | Train Loss: 0.051000215113162994, Train Acc: 0.0, Train Grad Norm 0.08643385022878647, | Test Loss: 0.08549495041370392, Test Acc: 0.0, Test Grad Norm: 0.7764367461204529 | Elapsed Time: 350.73365592956543
+Iter: 340 | Train Loss: 0.05334502458572388, Train Acc: 0.0, Train Grad Norm 0.13981544971466064, | Test Loss: 0.09387358278036118, Test Acc: 0.0, Test Grad Norm: 1.044356346130371 | Elapsed Time: 372.6304898262024
+Patience count 1
+Iter: 360 | Train Loss: 0.051940325647592545, Train Acc: 0.0, Train Grad Norm 0.10825548321008682, | Test Loss: 0.08730942755937576, Test Acc: 0.0, Test Grad Norm: 0.8386015892028809 | Elapsed Time: 394.4468047618866
+Patience count 2
+Iter: 380 | Train Loss: 0.0487673394382, Train Acc: 0.0, Train Grad Norm 0.06551649421453476, | Test Loss: 0.07402767986059189, Test Acc: 0.0, Test Grad Norm: 0.5657280087471008 | Elapsed Time: 416.29655051231384
+Iter: 400 | Train Loss: 0.043839842081069946, Train Acc: 0.0, Train Grad Norm 0.04945283383131027, | Test Loss: 0.058047909289598465, Test Acc: 0.0, Test Grad Norm: 0.35918283462524414 | Elapsed Time: 438.26109528541565
+Iter: 420 | Train Loss: 0.04488693177700043, Train Acc: 0.0, Train Grad Norm 0.048468589782714844, | Test Loss: 0.06045560911297798, Test Acc: 0.0, Test Grad Norm: 0.3768835663795471 | Elapsed Time: 460.08987832069397
+Iter: 440 | Train Loss: 0.044020190834999084, Train Acc: 0.0, Train Grad Norm 0.04083007201552391, | Test Loss: 0.06461967527866364, Test Acc: 0.0, Test Grad Norm: 0.4356522262096405 | Elapsed Time: 481.97359800338745
+Iter: 460 | Train Loss: 0.04619184136390686, Train Acc: 0.0, Train Grad Norm 0.050755321979522705, | Test Loss: 0.07171844691038132, Test Acc: 0.0, Test Grad Norm: 0.5559095144271851 | Elapsed Time: 503.8712737560272
+Patience count 1
+Iter: 480 | Train Loss: 0.04836928844451904, Train Acc: 0.0, Train Grad Norm 0.08056136220693588, | Test Loss: 0.08072073757648468, Test Acc: 0.0, Test Grad Norm: 0.7373118996620178 | Elapsed Time: 525.7101323604584
+Patience count 2
+Iter: 500 | Train Loss: 0.049061283469200134, Train Acc: 0.0, Train Grad Norm 0.05712626874446869, | Test Loss: 0.07958303391933441, Test Acc: 0.0, Test Grad Norm: 0.5986684560775757 | Elapsed Time: 547.5790684223175
+Patience count 3
