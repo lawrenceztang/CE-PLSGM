@@ -10,8 +10,11 @@ Reproduction code for "CE-PSGM"
    pip3 install -r requirements-pip.txt
    ```
 2. To run the Python file:
-
-```python src/train.py --optimizer_name ce_plsgm```
+```
+python src/train.py --optimizer_name ce_plsgm
+```
 3. To replicate paper results:
-
-```./scripts/california_housing/ce_psgm_seed0.sh```
+```
+./scripts/reproduction.sh
+```
+4. Run the Jupyter notebook `notebook_for_evaluation.ipynb`.
