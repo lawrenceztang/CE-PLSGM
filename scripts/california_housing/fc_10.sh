@@ -18,7 +18,7 @@ echo "Running with seed=$2"
         python src/train.py \
 	--optimizer_name ce_plsgm \
         --n_global_iters 500 \
-        --eps $eps \
+        --eps -1 \
         --model_name $model_name \
         --exp_name $exp_name \
         --delta .00000001 \
@@ -26,7 +26,7 @@ echo "Running with seed=$2"
 }
 
 
-echo "Running with eps=$eps, seed=$1"
+echo "Running with eps=-1, seed=$1"
 mkdir -p out/$exp_name/eps$eps/$dataset_name/seed$1/$model_name
 run2 -1 $1 > out/$exp_name/eps$eps/$dataset_name/seed$1/$model_name/ce_plsgm.out
 
