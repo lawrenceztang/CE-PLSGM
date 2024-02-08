@@ -114,7 +114,7 @@ def train(**kargs):
         shuffling_eps = CA.numericalanalysis(n, kargs["eps"], kargs["delta"], 10, 100, True)
         lowerbound_eps = CA.numericalanalysis(n, kargs["eps"], kargs["delta"], 10, 100, False)
 
-        print("Shuffling", n, kargs["eps"], "-DP local randomizers results is (eps, ", kargs["delta"],
+        print("Shuffling", n, kargs["eps"], "-DP local randomizers results_1 is (eps, ", kargs["delta"],
               ")-DP in the shuffle model for eps between", lowerbound_eps, "and", shuffling_eps)
         k = kargs["n_global_iters"]
 
@@ -174,7 +174,7 @@ def train(**kargs):
             if kargs["trace"]:
                 print(f"Loss Lip: {loss_lip}, Loss Sm: {loss_sm}, Risk Sm: {risk_sm}")
 
-            if patience_count >= 4 or np.isnan(train_loss):
+            if patience_count >= 3 or np.isnan(train_loss):
                 print("Learning was stopped")
                 success_flag =False
                 break

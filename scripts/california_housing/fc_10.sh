@@ -31,7 +31,7 @@ echo "Running with c=$c, seed=$2"
 }
 
 
-for eps in .6 1.2 2.4
+for eps in .6 1.0 1.8
 do
     echo "Running with eps=$eps, seed=$1"
     mkdir -p out/$exp_name/eps$eps/$dataset_name/seed$1/$model_name

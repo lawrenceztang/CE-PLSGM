@@ -19,9 +19,9 @@ step = 100
 numerical_upperbound = CA.numericalanalysis(n, epsorig, delta, num_iterations, step, True)
 numerical_lowerbound = CA.numericalanalysis(n, epsorig, delta, num_iterations, step, False)
 
-print("Shuffling", n, epsorig, "-DP local randomizers results is (eps, ", delta, ")-DP in the shuffle model for eps between", numerical_lowerbound, "and", numerical_upperbound)
+print("Shuffling", n, epsorig, "-DP local randomizers results_1 is (eps, ", delta, ")-DP in the shuffle model for eps between", numerical_lowerbound, "and", numerical_upperbound)
 
 #theoryanalysis computes the privacy amplification based on our theoretical analysis.
 closedform = CA.closedformanalysis(n, epsorig, delta)
 
-print("According to our closed form analysis, shuffling", n, epsorig, "-DP local randomizers results is (eps, ", delta, ")-DP in the shuffle model where eps is at most ", closedform)
+print("According to our closed form analysis, shuffling", n, epsorig, "-DP local randomizers results_1 is (eps, ", delta, ")-DP in the shuffle model where eps is at most ", closedform)
