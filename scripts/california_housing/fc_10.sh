@@ -9,7 +9,7 @@ optimizer_name=ce_plsgm
 save_intvl=20
 eta=None
 
-eval "$(conda shell.bash hook)"
+eval "$($HOME/mc3/bin/conda 'shell.bash' 'hook')"
 conda activate ce-plsgm
 
 # Sub-routine for DP-GD & Diff2
