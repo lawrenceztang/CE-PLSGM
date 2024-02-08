@@ -12,6 +12,24 @@ eta=None
 eval "$(conda shell.bash hook)"
 conda activate ce-plsgm
 
+# Sub-routine for DP-GD & Diff2
+run2() {
+echo "Running with seed=$2"
+        python src/train.py \
+	--optimizer_name ce_plsgm \
+        --n_global_iters 500 \
+        --eps $eps \
+        --model_name $model_name \
+        --exp_name $exp_name \
+        --delta .00000001 \
+        --seed $2
+}
+
+
+echo "Running with eps=$eps, seed=$1"
+mkdir -p out/$exp_name/eps$eps/$dataset_name/seed$1/$model_name
+run2 -1 $1 > out/$exp_name/eps$eps/$dataset_name/seed$1/$model_name/ce_plsgm.out
+
 
 # Sub-routine for DP-GD & Diff2
 run() {
@@ -38,31 +56,3 @@ do
     run $eps $1 > out/$exp_name/eps$eps/$dataset_name/seed$1/$model_name/ce_plsgm.out
 done
 
-
-# Sub-routine for noiseless GD
-
-eps=None
-c=None
-c2=None
-tau=0.0
-
-run2() {
-    python src/train.py \
-	   --eta $eta \
-	   --n_workers $n_workers \
-	   --seed $1 \
-	   --dataset_name $dataset_name \
-	   --model_name $model_name \
-	   --optimizer_name diff2_gd \
-	   --exp_name $exp_name \
-	   --n_global_iters $n_global_iters \
-	   --save_intvl $save_intvl \
-	   --eps $eps \
-	   --c $c \
-	   --c2 $c2 \
-	   --tau $tau
-}
-
-
-eta=None
-run2 $1 > out/$exp_name/eps$eps/$dataset_name/seed$1/$model_name/no_noise.out
